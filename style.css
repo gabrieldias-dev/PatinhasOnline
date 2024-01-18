@@ -80,6 +80,7 @@ ul {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.63) 0%, rgba(0, 0, 0, 0.04) 30.1%, rgba(0, 0, 0, 0.90) 100%);
  
 }
 
