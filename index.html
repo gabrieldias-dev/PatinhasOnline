@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PatinhasOnline</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Averia+Gruesa+Libre&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -68,7 +70,7 @@
                     <button class="btn-ajudar">Apadrinhe</button>
                 </div>
                 <div class="card-ajudar">
-                    <img src="assets/icon/Adocão.png" alt="">
+                    <img src="assets/icon/Adocao.png" alt="">
                     <h3>Adote</h3>
                     <p>Você pode nos ajudar depositando a quantia que puder em uma de nossas contas, pois temos muitos gastos com
                         veterinários,
@@ -81,10 +83,67 @@
                     Ou veja as outras opções <img src="assets/icon/setadireita.svg" alt="">
                 </a>
             </div>
+        </section>
+
+        <section class="section-frase">
+            <img src="assets/background-frase.jpg" alt=""> 
+            <p>Adotar é dar a oportunidade de um final feliz a quem nunca teve um começo.</p>
+        </section>
+
+        <section class="section-animais">
+            <h2>NOSSOS ANIMAIS</h2>
+
+            <div class="container-carrossel-animais">
+
+                <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="3" space-between="30"
+                    free-mode="true">
+
+                    <swiper-slide id="Adina">
+                        <div class="box-imagem">
+
+                            <img src="assets/AnimaisParaAdotar/Adina.png" alt="" class="imagem-animal"> 
+
+                            <div class="icon-animal">
+
+                                <img src="assets/icon/info.svg" alt="" class="icon-img-info" onclick="infoAnimaisAberto()">
+
+                                <div class="infoIconAnimais">
+                                    <span>Castrado</span><span>Vacinado</span>
+                                </div>
+
+                                <img src="assets/icon/femea.svg" alt="" class="icon-img sexo-animal">
+                            </div>
+
+                        </div>
+                        <div class="info-animal">
+                            <h4>Adina</h4>
+                            <div>
+                                <p>11 Meses</p>
+                                <p>Porte: M</p>
+                            </div>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>Slide 2</swiper-slide>
+                    <swiper-slide>Slide 3</swiper-slide>
+                    <swiper-slide>Slide 4</swiper-slide>
+                    <swiper-slide>Slide 5</swiper-slide>
+                    <swiper-slide>Slide 6</swiper-slide>
+                    <swiper-slide>Slide 7</swiper-slide>
+                    <swiper-slide>Slide 8</swiper-slide>
+                    <swiper-slide>Slide 9</swiper-slide>
+                </swiper-container>
+            </div>
+
+            <div class="todos">
+                <a href="#">
+                   Veja todos os animais <img src="assets/icon/setadireita.svg" alt="">
+                </a>
+            </div>
+
 
         </section>
-        <section></section>
-        <section></section>
+
         <section></section>
         <section></section>
         <section></section>
@@ -92,6 +151,10 @@
     <footer>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+   
+    <script src="script.js"></script>
 
 </body>
 
