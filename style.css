@@ -73,6 +73,10 @@ ul {
   color: var(--var-white);
 }
 
+.navigation li:nth-child(2) a:hover, .navigation li:nth-child(3) a:hover, .navigation li:nth-child(4) a:hover, .navigation li:nth-child(5) a:hover{
+  color: var(--var-green);
+}
+
 .navigation li {
   position: relative;
   padding: 1rem;
@@ -189,6 +193,7 @@ h1 {
 
 .btn-ajude-causa:hover {
   background-color: var(--var-green);
+  cursor: pointer;
 }
 
 /* --------------- section Informações --------------- */
@@ -289,6 +294,7 @@ h1 {
   font-size: 1.6rem;
   font-weight: 600;
   text-transform: uppercase;
+  transition: background-color .1s;
 }
 
 .btn-ajudar:hover{
@@ -300,7 +306,7 @@ h1 {
 }
 
 .ajudar-opcao {
-transition: transform .3s;
+transition: transform .2s;
 }
 
 .ajudar-opcao a {
@@ -422,7 +428,12 @@ swiper-slide {
   gap: 0.3rem;
 }
 
-.icon-animal .infoIconAnimais span {
+.icon-img-info {
+  cursor: pointer;
+}
+
+
+.infoIconAnimais span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -434,22 +445,21 @@ swiper-slide {
   font-family: var(--var-font);
   font-weight: 500;
   font-size: 1.3rem;
+  opacity: 0;
+  transition: all 0.5s;
 }
-.icon-img-info {
-  cursor: pointer;
-}
+
 
 .infoIconAnimais {
-  width: 100%;
   display: flex;
   gap: 0.3rem;
-  opacity: 0;
-  transition: opacity 0.5s;
 }
 
-.icon-animal:hover .infoIconAnimais {
+
+ .infoIconAnimais:hover span {
   opacity: 100%;
-}
+  
+ }
 
 .info-animal {
   padding: 1rem;
@@ -586,8 +596,8 @@ text-align: left;
 }
 
 #hortaDaVovo {
-  width: 24rem;
-  height: 23rem;
+  /* width: 24rem;
+  height: 23rem; */
 
 }
 
@@ -642,6 +652,11 @@ footer {
 .container-footer ul li a {
   color: var(--var-white);
   text-decoration: none;
+  
+}
+
+.container-footer ul li a:hover {
+  text-decoration: underline;
 }
 
 .container-footer ul {
@@ -658,7 +673,23 @@ footer {
 
 .menu-footer {
   font-weight: 700;
+}
 
+
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  transition: transform .3s;
+}
+
+.redes-sociais a {
+   transition: transform .3s;
+}
+
+.redes-sociais a:hover {
+  transform: scale(1.1);
 }
 
 .creditos-copywriting {
@@ -674,8 +705,17 @@ footer {
   height: 8.5rem;
 }
 
-.creditos-copywriting :nth-child(1) {
+.creditos-copywriting p:nth-child(1) {
   font-size: 1.4rem;
   color: var(--var-green);
+}
+
+.creditos-copywriting a {
+  color: var(--var-white);
+  text-decoration: none;
+}
+
+.creditos-copywriting a:hover {
+  text-decoration: underline;
 }
 
