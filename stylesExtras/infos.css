@@ -25,6 +25,10 @@ body {
   font-family: var(--var-font);
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 header {
   position: absolute;
   width: 100%;
@@ -64,7 +68,7 @@ ul {
   color: var(--var-white);
 }
 
-.navigation li:nth-child(2) a:hover, .navigation li:nth-child(3) a:hover, .navigation li:nth-child(4) a:hover, .navigation li:nth-child(5) a:hover{
+.navigation li:nth-child(1) a:hover, .navigation li:nth-child(3) a:hover, .navigation li:nth-child(4) a:hover, .navigation li:nth-child(5) a:hover{
   color: var(--var-green);
 }
 
@@ -114,4 +118,81 @@ ul {
 
 .navigation :nth-child(7) {
   margin-right: 0;
+}
+
+/* --------------- section Inicio --------------- */
+
+.section-inicio {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.63) 0%,
+    rgba(0, 0, 0, 0.04) 30.1%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+
+  padding: 0 10rem 4rem 10rem;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+
+}
+
+.background-inicio {
+  position: absolute;
+  top: -9rem;
+  width: 100%;
+  height: 160%;
+  left: 0;
+  z-index: -1;
+}
+
+.container-inicio {
+  width: 124rem;
+  height: 24.8rem;
+  padding: 10rem 0 6rem 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 3rem;
+}
+
+.container-inicio p {
+  color: #fff;
+  text-align: right;
+  font-family: var(--var-font-title);
+  font-size: 7.4rem;
+  font-weight: 400;
+}
+
+/* --------------- section Inicio --------------- */
+
+.section-SobreNos {
+  max-width: 100%;
+  padding: 3rem 6rem;
+
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.container-sobreNos {
+  width: 99rem;
+  height: 80rem;
+  border: 1px solid black;
+}
+
+.container-img {
+  width: 30rem;
+  height: 80rem;
+  overflow: hidden;
+}
+
+.container-img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
