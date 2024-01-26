@@ -174,3 +174,225 @@ ul {
   font-size: 7.4rem;
   font-weight: 400;
 }
+
+/* -------------- section animais -------------- */
+
+.section-animais {
+  width: 100%;
+  min-height: 100vh;
+  background: #EBEEF1;
+}
+
+
+/* -------------- section Como ajudar -------------- */
+
+.section-ajudar {
+  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.section-ajudar h2 {
+  text-align: center;
+}
+
+.container-ajudar {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.card-ajudar {
+  width: 32.6rem;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-ajudar img {
+  width: 4.1rem;
+  margin-bottom: 2rem;
+}
+
+.section-ajudar h3 {
+  font-size: 2.8rem;
+  text-align: center;
+  font-family: var(--var-font);
+  margin-bottom: 1rem;
+}
+
+.section-ajudar p {
+  color: #161616;
+  text-align: center;
+  font-family: var(--var-font);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.btn-ajudar {
+  width: 15.6rem;
+  padding: 1.4rem 2.6rem;
+  margin-top: 4rem;
+  border-radius: 10rem;
+  background: #a4c213;
+  border: none;
+
+  font-family: var(--var-font);
+  color: #170812;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.1s;
+}
+
+.btn-ajudar:hover {
+  color: var(--var-green);
+  background-color: var(--var-white);
+  outline: 2px solid var(--var-green);
+  cursor: pointer;
+}
+
+.ajudar-opcao {
+  transition: transform 0.2s;
+}
+
+.ajudar-opcao a {
+  color: var(--var-green);
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.ajudar-opcao:hover {
+  transform: scale(1.05);
+}
+
+/* ----------- section frase ----------- */
+
+.section-frase {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 10rem;
+  overflow: hidden;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-frase img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.section-frase p {
+  width: 124rem;
+  text-align: center;
+  font-family: var(--var-font-title);
+  color: var(--var-white);
+  font-size: 9.6rem;
+  font-weight: 400;
+}
+
+/* ----------- Footer ------------ */
+
+footer {
+ max-width: 100%;
+ background-color: var(--var-green);
+}
+
+.container-footer {
+  width: 100%;
+  padding: 7rem 20rem 10rem 20rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.listas-links {
+  display: flex;
+  gap: 6rem;
+}
+
+.container-footer ul li a {
+  color: var(--var-white);
+  text-decoration: none;
+  
+}
+
+.container-footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.container-footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: .9rem;
+  font-family: var(--var-font);
+  font-size: 1.6rem;
+}
+
+.container-footer ul li:nth-child(1) {
+  font-weight: 700;
+}
+
+.menu-footer {
+  font-weight: 700;
+}
+
+
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  transition: transform .3s;
+}
+
+.redes-sociais a {
+   transition: transform .3s;
+}
+
+.redes-sociais a:hover {
+  transform: scale(1.1);
+}
+
+.creditos-copywriting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: var(--var-font);
+  font-size: 1.2rem;
+  color: white;
+  background-color: var(--var-black);
+  height: 8.5rem;
+}
+
+.creditos-copywriting p:nth-child(1) {
+  font-size: 1.4rem;
+  color: var(--var-green);
+}
+
+.creditos-copywriting a {
+  color: var(--var-white);
+  text-decoration: none;
+}
+
+.creditos-copywriting a:hover {
+  text-decoration: underline;
+}
+
