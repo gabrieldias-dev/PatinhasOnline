@@ -145,14 +145,23 @@ ul {
 }
 
 .background-inicio {
-  aspect-ratio: 16/9;
   position: absolute;
   top: -9rem;
   width: 101%;
   height: 160%;
   left: 0;
   z-index: -1;
-}
+} 
+
+/* .background-inicio {
+  position: absolute;
+  width: 100%;
+  height: 160%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+} */
 
 .container-inicio {
   width: 124rem;
