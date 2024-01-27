@@ -181,7 +181,15 @@ ul {
   width: 100%;
   min-height: 100vh;
   background: #EBEEF1;
+  padding: 10rem;
 }
+
+.container-card {
+  height: 100%;
+  width: 100%;
+  border: 1px solid white;
+}
+
 
 
 /* -------------- section Como ajudar -------------- */
