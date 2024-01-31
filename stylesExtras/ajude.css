@@ -31,7 +31,7 @@ h2 {
 }
 
 ::-webkit-scrollbar {
-  display: none;
+  
 }
 
 header {
@@ -178,30 +178,42 @@ ul {
 /* -------------- section animais -------------- */
 
 .section-animais {
-  width: 100%;
-  min-height: 100vh;
-  background: #EBEEF1;
-  padding: 10rem;
+   max-width: 100vw;
+   overflow: hidden;
 }
 
-.section-animais h2 {
+h2 {
   text-align: center;
-  text-transform: uppercase;
 }
 
-.setaanterior {
-  transform: rotateY(180deg);
+.carrossel-animais {
+  position: relative;
+  border: 2px solid red;
+  overflow: hidden;
 }
+
 
 .container-card {
   height: 100%;
   width: 100%;
-  border: 1px solid rgb(6, 6, 6);
   padding: 1rem 10rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 4rem;
+}
+
+.container-card1 {
+ border: 1px solid rgb(6, 6, 6);
+}
+
+
+.container-card2 {
+  position:absolute;
+  top: 0;
+  right: -100%;
+  border: 1px solid blue;
+
 }
 
 .box-card {
@@ -291,6 +303,33 @@ ul {
   font-size: 1.6rem;
   font-family: var(--var-font);
 }
+
+
+
+
+
+.btn-animais {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.btn-animais button {
+  color: var(--var-green);
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
+
+}
+
+.seta-anterior {
+  transform: rotateY(180deg);
+}
+
+.container-card2:hover {
+  left: 2rem;
+}
+
 
 
 
