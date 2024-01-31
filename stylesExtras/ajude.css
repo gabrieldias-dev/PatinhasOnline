@@ -188,7 +188,6 @@ h2 {
 
 .carrossel-animais {
   position: relative;
-  border: 2px solid red;
   overflow: hidden;
 }
 
@@ -201,10 +200,13 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 4rem;
+  transition: all 1s;
 }
 
 .container-card1 {
- border: 1px solid rgb(6, 6, 6);
+  position: relative;
+  left: 0;
+  border: 5px solid rgb(6, 6, 6);
 }
 
 
@@ -324,10 +326,6 @@ h2 {
 
 .seta-anterior {
   transform: rotateY(180deg);
-}
-
-.container-card2:hover {
-  left: 2rem;
 }
 
 
