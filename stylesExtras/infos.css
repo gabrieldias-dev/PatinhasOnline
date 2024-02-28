@@ -204,6 +204,7 @@ ul {
 
 .container-sobreNos h2 {
   color: var(--var-white);
+  text-transform: uppercase;
   margin-bottom: 1rem;
 }
 
@@ -275,6 +276,7 @@ ul {
 }
 
 .section-ajudar h2 {
+  text-transform: uppercase;
   text-align: center;
 }
 

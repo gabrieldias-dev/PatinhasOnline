@@ -75,7 +75,7 @@ ul {
 
 .navigation li:nth-child(1) a:hover,
 .navigation li:nth-child(2) a:hover,
-.navigation li:nth-child(3) a:hover,
+.navigation li:nth-child(4) a:hover,
 .navigation li:nth-child(5) a:hover {
   color: var(--var-green);
 }
@@ -150,7 +150,7 @@ ul {
 .background-inicio {
   position: absolute;
   width: 100%;
-  height: 210%;
+  height: 100%;
   object-fit: cover;
   left: 0;
   top: 0;
