@@ -1,18 +1,15 @@
+function proxima() {
+  let container1 = document.querySelector(".container-card1");
+  let container2 = document.querySelector(".container-card2");
+  const btnProxima = document.querySelector(".proxima");
+  const btnAnterior = document.querySelector(".anterior");
 
-function proxima(){
-    let container1 = document.querySelector('.container-card1');
-    let container2 = document.querySelector('.container-card2');
-    const btnProxima = document.querySelector('.proxima');
-    const btnAnterior = document.querySelector(".anterior");
-
-    btnProxima.style.color = "#a5c21387";
-    btnAnterior.style.color = "#a4c213";
-    btnProxima.disabled = true;
-    btnAnterior.disabled = false;
-    container2.style.right = "0%";
-    container1.style.left = "-100%";
-
-
+  btnProxima.style.color = "#a5c21387";
+  btnAnterior.style.color = "#a4c213";
+  btnProxima.disabled = true;
+  btnAnterior.disabled = false;
+  container2.style.right = "0%";
+  container1.style.left = "-100%";
 }
 
 function anterior() {
@@ -27,4 +24,20 @@ function anterior() {
   btnAnterior.disabled = true;
   container2.style.right = "-100%";
   container1.style.left = "0%";
+}
+
+// POP UP CARDS
+
+function abrir() {
+  let popupdoar = document.querySelector("#popupdoar");
+
+  popupdoar.style = "display: block";
+  document.body.classList.add("blur");
+}
+
+function fechar() {
+  let popupdoar = document.querySelector("#popupdoar");
+
+  popupdoar.style = "display: none";
+  document.body.classList.remove("blur");
 }

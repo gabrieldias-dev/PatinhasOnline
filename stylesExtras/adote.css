@@ -192,7 +192,117 @@ h2 {
 
 .carrossel-animais {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
+  border: 1px solid black;
+}
+
+.popUp-Animais {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 104rem;
+  border: 1px solid black;
+  border-radius: 1.6rem;
+  z-index: 2;
+}
+
+.popUp-informacao {
+  width: 100%;
+  height: 52rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: var(--var-white);
+  border-radius: 1.6rem 1.6rem 0 0;
+}
+
+.popUp-info {
+  width: 30rem;
+  color: black;
+}
+
+.popUp-info p:nth-child(2) {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.popUp-info p {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.popUp-historia {
+  width: calc(100% - 30rem);
+  height: 100%;
+  padding: 3rem 0;
+  position: relative;
+}
+
+.popUp-historia h3 {
+  text-align: center;
+  color: var(--var-green);
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.popUp-historia p {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  font-weight: 500;
+}
+
+.btns-adote-apadrinhe {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.btn-adote-apadrinhe {
+  border: none;
+  width: 32rem;
+  border-radius: 1.8rem;
+  background-color: var(--var-green);
+  color: white;
+  font-size: 1.8rem;
+  padding: 1.8rem 2.6rem;
+}
+
+#info-vacinas {
+  width: 100%;
+  font-size: 1.6rem;
+  text-align: center;
+  background-color: white;
+  font-weight: 500;
+  padding: 4rem 0 2rem 0;
+  border-radius: 0 0 1.6rem 1.6rem;
+  /* border-bottom-right-radius: 1.6rem;
+  border-bottom-left-radius: 1.6rem; */
+}
+
+.btn-fechar {
+  border: none;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 1.6rem;
+  background-color: var(--var-green);
+  font-size: 3rem;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 1rem;
+  transition: transform 0.3s;
+}
+
+.btn-fechar:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 .container-card {
