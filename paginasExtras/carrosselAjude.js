@@ -28,7 +28,30 @@ function anterior() {
 
 // POP UP CARDS
 
- 
+// Obtém todos os elementos com a classe 'card'
+var cards = document.querySelectorAll(".boxCard");
+
+// Adiciona um event listener a cada card
+cards.forEach(function (boxCard) {
+  boxCard.addEventListener("click", function () {
+    let middleOfPage =
+      document.body.scrollHeight / 2 - window.innerHeight / 2 - 520;
+    let popUpAnimais = document.querySelector(".popUp-Animais");
+
+    popUpAnimais.style = "display: flex";
+    window.scrollTo(0, middleOfPage);
+    document.body.classList.add("blur");
+  });
+});
+
+function fechar() {
+  let popUpAnimais = document.querySelector(".popUp-Animais");
+
+  popUpAnimais.style = "display: none";
+  document.body.classList.remove("blur");
+}
+
+
 // document.querySelectorAll(".box-card").addEventListener("click", function () {
 //   let middleOfPage =
 //     document.body.scrollHeight / 2 - window.innerHeight / 2 - 520;
@@ -48,11 +71,3 @@ function anterior() {
 //   popUpAnimais.style = "display: flex";
 //   window.scrollTo(0, middleOfPage);
 // }
-
-function fechar() {
-  let popUpAnimais = document.querySelector(".popUp-Animais");
-
-  popUpAnimais.style = "display: none";
-  document.body.classList.remove("blur");
-  // document.body.classList.remove("blur");
-}
