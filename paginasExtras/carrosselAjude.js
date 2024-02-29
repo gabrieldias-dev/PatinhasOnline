@@ -28,16 +28,31 @@ function anterior() {
 
 // POP UP CARDS
 
-function abrir() {
-  let popupdoar = document.querySelector("#popupdoar");
+ 
+// document.querySelectorAll(".box-card").addEventListener("click", function () {
+//   let middleOfPage =
+//     document.body.scrollHeight / 2 - window.innerHeight / 2 - 520;
+//   let popUpAnimais = document.querySelector(".popUp-Animais");
 
-  popupdoar.style = "display: block";
-  document.body.classList.add("blur");
-}
+//   popUpAnimais.style = "display: flex";
+//   window.scrollTo(0, middleOfPage);
+//   document.body.classList.add("blur");
+// });
+
+// function abrir() {
+//   let middleOfPage =
+//     document.body.scrollHeight / 2 - window.innerHeight / 2 - 520;
+//   let cardAnimal = document.querySelector("#adina");
+//   let popUpAnimais = document.querySelector(".popUp-Animais");
+
+//   popUpAnimais.style = "display: flex";
+//   window.scrollTo(0, middleOfPage);
+// }
 
 function fechar() {
-  let popupdoar = document.querySelector("#popupdoar");
+  let popUpAnimais = document.querySelector(".popUp-Animais");
 
-  popupdoar.style = "display: none";
+  popUpAnimais.style = "display: none";
   document.body.classList.remove("blur");
+  // document.body.classList.remove("blur");
 }

@@ -15,13 +15,25 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-family: var(--var-font);
 }
 
 body {
+  position: relative;
   max-width: 100vw;
   overflow: overlay;
   font-family: var(--var-font);
+}
+
+body.blur::before {
+  left: 0;
+  content: "";
+  position: absolute;
+  z-index: 10;
+  width: 100vw;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 h2 {
@@ -193,21 +205,20 @@ h2 {
 .carrossel-animais {
   position: relative;
   display: flex;
+  height: 213rem;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  border: 1px solid black;
 }
 
 .popUp-Animais {
   position: absolute;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: end;
   width: 104rem;
-  border: 1px solid black;
   border-radius: 1.6rem;
-  z-index: 2;
+  z-index: 15;
 }
 
 .popUp-informacao {
