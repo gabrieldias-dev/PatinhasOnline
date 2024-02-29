@@ -338,7 +338,7 @@ h2 {
   right: -100%;
 }
 
-.box-card {
+.boxCard {
   width: 32rem;
   height: 39rem;
   background-color: var(--var-white);
