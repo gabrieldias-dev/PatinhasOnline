@@ -124,7 +124,7 @@ ul {
   margin-right: 0;
 }
 
-.navigation :nth-child(6) {
+.navigation :nth-child(7) {
   background-color: var(--var-white);
   outline: 2px solid var(--var-green);
 }
@@ -136,6 +136,7 @@ ul {
   width: 100%;
   height: 26rem;
   overflow: hidden;
+
   padding: 0 10rem 4rem 10rem;
   display: flex;
   justify-content: end;
@@ -145,7 +146,7 @@ ul {
 .background-inicio {
   position: absolute;
   width: 100%;
-  height: 165%;
+  height: 200%;
   object-fit: cover;
   top: 0;
   left: 0;
@@ -156,9 +157,8 @@ ul {
 .section-doacao {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   width: 100%;
-  height: 86rem;
+  height: 116.7rem;
   padding: 4rem 10rem;
 }
 
@@ -180,8 +180,7 @@ ul {
   margin: 2rem 0;
 }
 
-.info-doacao span,
-.apadrinhamentoMensagem span {
+.info-doacao span {
   text-decoration: underline;
 }
 
@@ -199,15 +198,15 @@ ul {
   margin: 2rem 0;
 }
 
-.apadrinhamento {
-  width: 46rem;
+.doacao {
+  width: 51rem;
   height: 100%;
   transform: translateY(-8rem);
 }
 
-.apadrinhamentoMensagem {
+.doacaoMensagem {
   width: 100%;
-  height: 57rem;
+  height: 90.2rem;
   padding: 5.4rem 4rem;
   display: flex;
   flex-direction: column;
@@ -216,14 +215,14 @@ ul {
   background-color: var(--var-white);
 }
 
-.apadrinhamentoMensagem h2 {
+.doacaoMensagem h2 {
   text-align: center;
   font-family: var(--var-font-title);
   font-size: 7.4rem;
   font-weight: 500;
 }
 
-.apadrinhamentoMensagem p {
+.doacaoMensagem p {
   text-align: center;
   font-size: 2rem;
   font-weight: 500;
@@ -250,7 +249,7 @@ ul {
   cursor: pointer;
 }
 
-.btnApadrinheAgora {
+.btnPagBank {
   border: none;
   width: 100%;
   height: 5.8rem;
@@ -267,9 +266,9 @@ ul {
   cursor: pointer;
 }
 
-.paginaDoar {
+.paginaApadrinhe {
   width: 100%;
-  height: 24.4rem;
+  height: 22rem;
   background-color: var(--var-green);
   margin-top: 3rem;
   padding: 5.4rem 4rem;
@@ -278,14 +277,14 @@ ul {
   gap: 3rem;
 }
 
-.paginaDoar p {
+.paginaApadrinhe p {
   color: var(--var-black);
   font-size: 2rem;
   font-weight: 500;
   text-align: center;
 }
 
-.btnDoar {
+.btnApadrinhe {
   border: none;
   width: 100%;
   height: 5.8rem;
