@@ -163,7 +163,7 @@ ul {
 }
 
 .info-doacao {
-  width: 59.5rem;
+  width: 49.5rem;
   height: 78.8rem;
 }
 
@@ -177,7 +177,12 @@ ul {
 .info-doacao p {
   font-weight: 500;
   font-size: 1.6rem;
-  margin: 1rem 0;
+  margin: 2rem 0;
+}
+
+.info-doacao span,
+.apadrinhamentoMensagem span {
+  text-decoration: underline;
 }
 
 .info-doacao h3:nth-child(2) {
@@ -185,7 +190,7 @@ ul {
   font-family: var(--var-font);
   font-size: 2rem;
   font-weight: 500;
-  margin-bottom: 2rem;
+  margin-bottom: 3.5rem;
 }
 
 .info-doacao h3:nth-child(4) {
@@ -197,8 +202,109 @@ ul {
 .apadrinhamento {
   width: 46rem;
   height: 100%;
-  border: 1px solid black;
+  transform: translateY(-8rem);
+}
+
+.apadrinhamentoMensagem {
+  width: 100%;
+  height: 57rem;
+  padding: 5.4rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   background-color: var(--var-white);
+}
+
+.apadrinhamentoMensagem h2 {
+  text-align: center;
+  font-family: var(--var-font-title);
+  font-size: 7.4rem;
+  font-weight: 500;
+}
+
+.apadrinhamentoMensagem p {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.apadrinhamentoValores {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  gap: 1rem;
+}
+
+.btnValor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 11.8rem;
+  height: 4rem;
+  border: 1px solid #16161633;
+  border-radius: 0.6rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btnApadrinheAgora {
+  border: none;
+  width: 100%;
+  height: 5.8rem;
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  align-items: center;
+  color: var(--var-white);
+  background-color: var(--var-green);
+  font-family: var(--var-font);
+  border-radius: 0.8rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btnApadrinheAgora img {
+  width: 2rem;
+}
+
+.paginaDoar {
+  width: 100%;
+  height: 24.4rem;
+  background-color: var(--var-green);
+  margin-top: 3rem;
+  padding: 5.4rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.paginaDoar p {
+  color: var(--var-black);
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.btnDoar {
+  border: none;
+  width: 100%;
+  height: 5.8rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  color: var(--var-green);
+  background-color: var(--var-white);
+  border-radius: 0.8rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: var(--var-font);
+  cursor: pointer;
 }
 
 /* -------------- section Feed Instagram-------------- */
