@@ -140,6 +140,13 @@ ul {
   display: flex;
   justify-content: end;
   align-items: end;
+
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.63) 0%,
+    rgba(0, 0, 0, 0.04) 30.1%,
+    rgba(0, 0, 0, 0.815) 100%
+  );
 }
 
 .background-inicio {
@@ -265,7 +272,6 @@ ul {
   font-size: 1.8rem;
   font-weight: 600;
   cursor: pointer;
-  text-decoration: none;
 }
 
 .paginaDoar {
@@ -279,11 +285,13 @@ ul {
   gap: 3rem;
 }
 
-.paginaDoar p {
+.paginaDoar p,
+.paginaDoar a {
   color: var(--var-black);
   font-size: 2rem;
   font-weight: 500;
   text-align: center;
+  text-decoration: none;
 }
 
 .input-optionValor {
@@ -322,6 +330,7 @@ ul {
   background-color: var(--var-green);
   border: none;
 }
+
 .btnValor label input[type="radio"]:checked + span {
   color: #ffffff;
 }
@@ -341,6 +350,7 @@ ul {
   font-weight: 600;
   font-family: var(--var-font);
   cursor: pointer;
+  text-decoration: none;
 }
 
 /* -------------- section Feed Instagram-------------- */
