@@ -424,6 +424,7 @@ h2 {
   justify-content: space-between;
   font-size: 1.6rem;
   font-family: var(--var-font);
+  font-weight: 500;
 }
 
 .btn-animais {
