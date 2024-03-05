@@ -279,11 +279,17 @@ h2 {
 .btn-adote-apadrinhe {
   border: none;
   width: 32rem;
+  height: 5.68rem;
   border-radius: 1.8rem;
   background-color: var(--var-green);
-  color: white;
   font-size: 1.8rem;
-  padding: 1.8rem 2.6rem;
+  overflow: hidden;
+}
+
+.btn-adote-apadrinhe a {
+  padding: 1.8rem 11.5rem;
+  color: white;
+  text-decoration: none;
 }
 
 #info-vacinas {
