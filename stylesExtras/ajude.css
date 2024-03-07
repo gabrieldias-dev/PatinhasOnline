@@ -370,3 +370,18 @@ footer {
 .creditos-copywriting a:hover {
   text-decoration: underline;
 }
+
+
+/*  ------------ Telas médias ------------------- */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .container-inicio h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Tela pequenas / celulares */
+
+@media (max-width: 768px) {
+}

@@ -147,24 +147,24 @@ ul {
   align-items: end;
 }
 
-.background-inicio {
+/* .background-inicio {
   position: absolute;
   top: -9rem;
   width: 101%;
   height: 160%;
   left: 0;
   z-index: -1;
-}
+} */
 
-/* .background-inicio {
+.background-inicio {
   position: absolute;
   width: 100%;
-  height: 160%;
-  object-fit: cover;
-  top: 0;
+  height: 150%;
+  object-fit: fill;
+  top: -10rem;
   left: 0;
   z-index: -1;
-} */
+}
 
 .container-inicio {
   width: 124rem;
@@ -728,4 +728,290 @@ footer {
 
 .creditos-copywriting a:hover {
   text-decoration: underline;
+}
+
+/*  ------------ Telas médias ------------------- */
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  nav {
+    width: 100%;
+    margin: 4rem 1rem;
+  }
+
+  .logoPatinhasOnline {
+    width: 10rem;
+  }
+
+  ul {
+    font-size: 1.3rem;
+  }
+
+  .navigation li {
+    padding: 1rem;
+    margin-right: 1rem;
+  }
+
+  .navigation :nth-child(7),
+  .navigation :nth-child(8) {
+    display: flex;
+    min-width: 13rem;
+    padding: 0 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .section-inicio {
+    padding: 0 3rem;
+  }
+
+  .container-inicio {
+    width: 100%;
+    padding: 2rem 0 2rem 1rem;
+    justify-content: center;
+  }
+
+  .container-inicio h1 {
+    font-size: 5rem;
+  }
+
+  .btn-ajude-causa {
+    font-size: 1.3rem;
+
+    width: 22rem;
+    height: 4.4rem;
+  }
+
+  .section-infos {
+    padding: 1.5rem 2rem;
+    overflow: hidden;
+  }
+
+  .container-infos,
+  .container-img {
+    width: 36rem;
+    overflow: hidden;
+  }
+
+  .container-img img {
+    width: 110%;
+    height: 100%;
+  }
+
+  .container-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    font-size: 1.8rem;
+  }
+
+  .container-infos h2 {
+    font-size: 4rem;
+  }
+
+  .section-ajudar {
+    padding: 5rem;
+    gap: 1.5rem;
+  }
+
+  .section-ajudar h2 {
+    font-size: 4rem;
+  }
+
+  .container-ajudar {
+    gap: 1.5rem;
+  }
+
+  .card-ajudar {
+    width: 25rem;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-ajudar img {
+    width: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .section-ajudar h3 {
+    font-size: 2rem;
+  }
+
+  .section-ajudar p {
+    font-size: 1.3rem;
+  }
+
+  .btn-ajudar {
+    width: 10rem;
+    padding: 1rem 1rem;
+    margin-top: 4rem;
+    font-size: 1.2rem;
+  }
+
+  .ajudar-opcao a {
+    font-size: 1.4rem;
+  }
+
+  .section-frase {
+    padding: 2rem;
+    overflow: hidden;
+    height: 60vh;
+  }
+
+  .section-frase img {
+    top: -50%;
+  }
+
+  .section-frase p {
+    width: 100%;
+    font-size: 6rem;
+  }
+
+  /* Section animais */
+
+  .section-animais {
+    padding: 2rem;
+  }
+
+  .section-animais h2 {
+    color: var(--var-white);
+    font-family: var(--var-font-title);
+    font-size: 3rem;
+  }
+
+  .container-carrossel-animais {
+    width: 100%;
+    height: 45rem;
+    position: relative;
+  }
+
+  swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  swiper-slide {
+    width: 28rem;
+    height: 33rem;
+    padding: 1rem;
+  }
+
+  .box-imagem {
+    height: 80%;
+  }
+
+  .icon-animal {
+    width: 100%;
+  }
+
+  .sexo-animal {
+    width: 3.5rem;
+  }
+
+  .infoIconAnimais span {
+    width: 100%;
+    padding: 0 0.3rem;
+    font-size: 1rem;
+  }
+
+  .info-animal h4 {
+    font-size: 1.8rem;
+  }
+
+  .info-animal > div {
+    font-size: 1.5rem;
+  }
+
+  .todos-animais {
+    margin-top: 1rem;
+  }
+
+  .todos-animais a {
+    font-size: 1.8rem;
+  }
+
+  /* ------------ Section Historias Felizes ------------ */
+
+  .section-historias {
+    padding: 3rem;
+  }
+
+  .section-historias h2 {
+    font-size: 3rem;
+  }
+
+  .container-carrossel-historias {
+    width: 100%;
+    height: 100%;
+  }
+
+  .section-historias swiper-container {
+    height: 100%;
+  }
+
+  .box-historias {
+    height: 100%;
+    padding: 0 2rem;
+  }
+
+  .box-historias .img-box {
+    width: 50%;
+    height: 100%;
+  }
+
+  .box-historias .img-box img {
+    height: 100%;
+  }
+
+  .historia-feliz {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    gap: 1rem;
+  }
+
+  .historia-feliz h4 {
+    font-size: 2rem;
+  }
+
+  .historia-feliz p {
+    font-size: 1.6rem;
+  }
+
+  /* ----------- Footer ------------ */
+
+  footer {
+    max-width: 100%;
+    background-color: var(--var-green);
+  }
+
+  .container-footer {
+    width: 100%;
+    padding: 7rem 5rem;
+  }
+  .listas-links {
+    gap: 3rem;
+  }
+
+  .container-footer ul {
+    font-size: 1.5rem;
+  }
+
+  .creditos-copywriting {
+    font-size: 1.1rem;
+  }
+
+  .creditos-copywriting p:nth-child(1) {
+    font-size: 1.3rem;
+    color: var(--var-green);
+  }
+}
+
+/* Tela pequenas / celulares */
+
+@media (max-width: 768px) {
 }
