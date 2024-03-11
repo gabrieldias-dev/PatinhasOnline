@@ -1044,8 +1044,8 @@ footer {
 
   header {
     width: 100%;
-    height: 100%;
     overflow: hidden;
+    height: 100vh;
   }
 
   nav {
@@ -1151,5 +1151,209 @@ footer {
 
   .btn-ajude-causa:hover {
     background-color: white;
+  }
+
+  /* --------------- section Informações --------------- */
+
+  .section-infos {
+    flex-direction: column;
+    padding: 3rem 2rem;
+    gap: 2rem;
+    overflow: hidden;
+  }
+
+  .container-infos,
+  .container-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .container-infos {
+    padding: 4rem;
+    font-size: 1.9rem;
+  }
+
+  .container-infos h2 {
+    font-size: 4rem;
+  }
+
+  .container-img img {
+    width: 100%;
+  }
+
+  /* -------------- section Como ajudar -------------- */
+
+  .section-ajudar {
+    padding: 4rem 2rem;
+    height: auto;
+  }
+  .container-ajudar {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  /* --------- section frase --------------- */
+
+  .section-frase {
+    width: 100%;
+    height: auto;
+    padding: 4rem 1rem;
+  }
+
+  .section-frase img {
+    width: 100%;
+    top: 0;
+  }
+
+  .section-frase p {
+    width: 100%;
+    font-size: 4rem;
+  }
+
+  /* Cards animais */
+
+  .section-animais {
+    max-width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+
+    padding: 3rem 2rem;
+  }
+
+  .section-animais h2 {
+    width: 100%;
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  /* historias felizes */
+
+  .section-historias {
+    overflow: hidden;
+    padding: 3rem 1.5rem;
+  }
+
+  .section-historias h2 {
+    width: 100%;
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .container-carrossel-historias {
+    width: 100%;
+    height: 100%;
+  }
+
+  .section-historias swiper-container {
+    height: 100%;
+  }
+
+  .section-historias swiper-slide {
+    height: auto;
+  }
+
+  .box-historias {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 2.8rem;
+    gap: 1.5rem;
+    margin: 0 0;
+  }
+
+  .box-historias .img-box {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+  }
+
+  .box-historias .img-box img {
+    object-position: 0 -7rem;
+  }
+
+  .historia-feliz {
+    width: 100%;
+    height: auto;
+    padding: 2rem 3rem;
+  }
+
+  .historia-feliz h4 {
+    font-size: 2rem;
+  }
+
+  .historia-feliz p {
+    font-size: 1.6rem;
+  }
+
+  /* ------------ Section parceiros ------------ */
+
+  .section-parceiros {
+    width: 100%;
+    padding: 4rem 2rem;
+    height: auto;
+    gap: 2rem;
+  }
+
+  .section-parceiros h2 {
+    font-size: 4rem;
+  }
+
+  .container-parceiros {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 2rem;
+  }
+
+  #viniVegani img {
+    width: 30rem;
+  }
+
+  /* ------------ Section Feed instagram  ------------ */
+
+  .section-feedInstagram {
+    height: 100%;
+    padding-bottom: 2rem;
+  }
+
+  /* ----------- Footer ------------ */
+
+  footer {
+    max-width: 100%;
+    height: auto;
+    background-color: var(--var-green);
+    padding: 0;
+  }
+
+  .container-footer {
+    width: 100%;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    height: auto;
+  }
+
+  .container-footer ul {
+    font-size: 1.9rem;
+  }
+
+  .listas-links {
+    padding-left: 1.6rem;
+    flex-wrap: wrap;
+  }
+
+  .redes-sociais {
+    padding-left: 2rem;
+    align-items: center;
+  }
+
+  .creditos-copywriting {
+    font-size: 1.1rem;
+  }
+
+  .creditos-copywriting p:nth-child(1) {
+    font-size: 1.3rem;
+    color: var(--var-green);
   }
 }
