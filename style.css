@@ -31,6 +31,7 @@ body {
 
 ::-webkit-scrollbar {
   display: none;
+  scroll-behavior: initial;
 }
 
 header {
@@ -1043,19 +1044,16 @@ footer {
 
   header {
     width: 100%;
+    height: 100%;
+    overflow: hidden;
   }
 
   nav {
     display: none;
   }
 
-  .menuTelasMenores,
   .menuHamburguer {
-    display: initial;
-  }
-
-  .menuHamburguer {
-    position: absolute;
+    position: fixed;
     display: flex;
     width: 100%;
     justify-content: end;
