@@ -1120,6 +1120,9 @@ footer {
 
   .section-inicio {
     padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .background-inicio {
@@ -1132,7 +1135,8 @@ footer {
 
   .container-inicio {
     width: 100%;
-    padding: 1rem;
+    height: auto;
+    padding: 0;
   }
 
   h1 {
@@ -1147,6 +1151,7 @@ footer {
     font-size: 1.4rem;
     width: 23rem;
     height: 4.2rem;
+    border: 1px solid var(--var-green);
   }
 
   .btn-ajude-causa:hover {
@@ -1196,7 +1201,7 @@ footer {
 
   .section-frase {
     width: 100%;
-    height: auto;
+    height: 60vh;
     padding: 4rem 1rem;
   }
 
