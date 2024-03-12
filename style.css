@@ -1055,12 +1055,25 @@ footer {
   .menuHamburguer {
     position: absolute;
     display: flex;
+    justify-content: space-between;
     width: 100%;
-    justify-content: end;
-    filter: invert(1);
     padding: 1rem;
     z-index: 10;
   }
+
+  .menuHamburguer :nth-child(1) {
+    width: 8rem;
+  }
+
+  .menuHamburguer :nth-child(2) {
+    filter: invert(1);
+    width: 4rem;
+    height: 4rem;
+  }
+
+  /* .menuHamburguer img {
+    width: 5rem;
+  } */
 
   .menuTelasMenores {
     width: 100%;
