@@ -11,6 +11,7 @@
   --swiper-pagination-color: #fff;
   --swiper-pagination-bullet-horizontal-gap: 10px;
   --swiper-navigation-color: #161616b6;
+  --swiper-navigation-size: 24px;
 
   --var-font: "Montserrat", sans-serif;
   --var-font-title: "Averia Gruesa Libre", sans-serif;
@@ -887,7 +888,7 @@ footer {
     font-size: 6rem;
   }
 
-  /* Section animais */
+  /* -------------- Section animais ----------------- */
 
   .section-animais {
     padding: 2rem;
@@ -1228,23 +1229,89 @@ footer {
     font-size: 4rem;
   }
 
-  /* Cards animais */
+  /* --------------- Cards animais ---------------- */
 
   .section-animais {
-    max-width: 100%;
-    min-height: 100vh;
-    overflow: hidden;
-
-    padding: 3rem 2rem;
+    padding: 2rem;
   }
 
   .section-animais h2 {
-    width: 100%;
-    font-size: 4rem;
-    text-align: center;
+    color: var(--var-white);
+    font-family: var(--var-font-title);
+    font-size: 3rem;
   }
 
-  /* historias felizes */
+  .container-carrossel-animais {
+    width: 100%;
+    height: 45rem;
+    position: relative;
+  }
+
+  .section-animais swiper-container {
+    width: 100%;
+    height: 90%;
+  }
+
+  .section-animais swiper-slide {
+    width: 28rem;
+    height: 32rem;
+    padding: 1rem;
+  }
+
+  .box-imagem {
+    height: 70%;
+  }
+
+  .imagem-animal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    transform: scale(1.2);
+    z-index: -1;
+  }
+
+  .icon-animal {
+    width: 100%;
+  }
+
+  .sexo-animal {
+    width: 3rem;
+  }
+
+  .infoIconAnimais {
+    width: 2.8rem;
+  }
+
+  .infoIconAnimais span {
+    width: 100%;
+    padding: 0 0.3rem;
+    font-size: 0.5rem;
+  }
+
+  .info-animal h4 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .info-animal > div {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+  }
+
+  .todos-animais {
+    margin-top: 1rem;
+  }
+
+  .todos-animais a {
+    font-size: 1.8rem;
+  }
+
+  /* -------------- historias felizes ------------- */
 
   .section-historias {
     overflow: hidden;
