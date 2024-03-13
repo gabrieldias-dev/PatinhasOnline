@@ -16,6 +16,30 @@
 </head>
 <body>
 <header>
+    <div class="menuHamburguer">
+        <img src="../assets/LogoPatinhas.svg" alt="">
+        <img src="../assets/icon/openMenu.png" alt="" onclick="openMenu()">
+    </div>
+    
+    <div class="menuTelasMenores">
+        <div class="fecharMenu" onclick="closedMenu()">
+            <img src="../assets/icon/closeMenu.png" alt="">
+        </div>
+        <a href="index.html">
+            <img src="../assets/LogoPatinhas.svg" alt="" class="logoPatinhasOnline">
+        </a>
+        <ul class="navigation">
+            <li class="ativo"><a href="index.html">HOME</a></li>
+            <li><a href="paginasExtras/infos.html">INFOS</a></li>
+            <li><a href="paginasExtras/adote.html">ADOTE</a></li>
+            <a href="">
+                <li><a href="paginasExtras/ajude.html">AJUDE</a></li>
+            </a>
+            <li><a href="">LOJA</a></li>
+            <li><a href="paginasExtras/apadrinhe.html">APADRINHE</a></li>
+            <li><a href="paginasExtras/doar.html">FAÇA UMA DOAÇÃO</a></li>
+        </ul>
+    </div>
     <nav>
         <a href="../index.html"><img src="../assets/LogoPatinhas.svg" alt="" class="logoPatinhasOnline"></a>
         <ul class="navigation">
@@ -197,6 +221,8 @@
                 href="https://github.com/gabrieldias-dev" target="_blank">Gabriel Dias</a>.</p>
     </div>
 </footer>
+
+    <script src="../script.js"></script>
     
 </body>
 </html>

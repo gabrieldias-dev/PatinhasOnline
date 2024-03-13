@@ -42,6 +42,11 @@ header {
   justify-content: center;
 }
 
+.menuTelasMenores,
+.menuHamburguer {
+  display: none;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -424,29 +429,27 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: .6rem;
+  gap: 0.6rem;
 
   width: 37.53rem;
   height: 12rem;
   background-color: var(--var-green);
   padding: 3rem 4rem;
   border-radius: 2rem;
-  
 }
 
 .box-contato p {
-  transition: text-decoration .3s;
+  transition: text-decoration 0.3s;
   color: white;
 }
 
 .box-contato p a {
   color: var(--var-white);
   text-decoration: none;
-
 }
 
 .box-contato p:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* -------------- section Feed Instagram-------------- */
@@ -466,14 +469,13 @@ text-decoration: underline;
 
 .boxPostagem img {
   width: 100%;
-  
 }
 
 /* ----------- Footer ------------ */
 
 footer {
- max-width: 100%;
- background-color: var(--var-green);
+  max-width: 100%;
+  background-color: var(--var-green);
 }
 
 .container-footer {
@@ -491,7 +493,6 @@ footer {
 .container-footer ul li a {
   color: var(--var-white);
   text-decoration: none;
-  
 }
 
 .container-footer ul li a:hover {
@@ -501,7 +502,7 @@ footer {
 .container-footer ul {
   display: flex;
   flex-direction: column;
-  gap: .9rem;
+  gap: 0.9rem;
   font-family: var(--var-font);
   font-size: 1.6rem;
 }
@@ -514,17 +515,16 @@ footer {
   font-weight: 700;
 }
 
-
 .redes-sociais {
   display: flex;
   justify-content: center;
   gap: 2rem;
   margin-bottom: 2rem;
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .redes-sociais a {
-   transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .redes-sociais a:hover {
@@ -560,15 +560,133 @@ footer {
 
 /*  ------------ Telas médias ------------------- */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 1025px) and (max-width: 1225px) {
+  .navigation :nth-child(8) {
+    width: 22rem;
+    padding: 0 2rem;
+  }
+}
 
-  .container-inicio h1 {
-    font-size: 2rem;
+@media (min-width: 768px) and (max-width: 1024px) {
+  nav {
+    width: 100%;
+    margin: 4rem 1rem;
+  }
+
+  .logoPatinhasOnline {
+    width: 10rem;
+  }
+
+  ul {
+    font-size: 1.3rem;
+  }
+
+  .navigation li {
+    padding: 1rem;
+    margin-right: 1rem;
+  }
+
+  .navigation :nth-child(7),
+  .navigation :nth-child(8) {
+    display: flex;
+    min-width: 13rem;
+    padding: 0 0.5rem;
+    font-size: 1.1rem;
   }
 }
 
 /* Tela pequenas / celulares */
 
 @media (max-width: 768px) {
-}
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
 
+  header {
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .menuHamburguer {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    z-index: 10;
+  }
+
+  .menuHamburguer :nth-child(1) {
+    width: 8rem;
+  }
+
+  .menuHamburguer :nth-child(2) {
+    filter: invert(1);
+    width: 4rem;
+    height: 4rem;
+  }
+
+  /* .menuHamburguer img {
+    width: 5rem;
+  } */
+
+  .menuTelasMenores {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    background-color: var(--var-green);
+    z-index: 100;
+    transition: transform 0.5s;
+  }
+
+  .menuTelasMenores .logoPatinhasOnline {
+    margin-bottom: 3rem;
+  }
+
+  .menuTelasMenores .navigation {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .menuTelasMenores .navigation li {
+    font-size: 2rem;
+  }
+
+  .menuTelasMenores .navigation li:nth-child(-n + 7) a:hover {
+    color: white;
+  }
+
+  .menuTelasMenores .navigation :nth-child(n + 7) {
+    background-color: var(--var-white);
+    outline: 1px solid var(--var-black);
+    margin: 0.5rem 0;
+  }
+
+  .menuTelasMenores .navigation li.ativo::before {
+    background-color: var(--var-white);
+  }
+
+  .fecharMenu {
+    display: flex;
+    justify-content: end;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .fecharMenu img {
+    width: 3.5rem;
+    filter: invert(1);
+  }
+}
