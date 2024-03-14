@@ -172,18 +172,17 @@ nav .navigation :nth-child(7):hover {
 }
 
 .container-inicio {
-  width: 124rem;
+  width: 100%;
   height: 24.8rem;
-  padding: 10rem 0 6rem 20rem;
   display: flex;
   flex-direction: column;
-  align-items: end;
-  gap: 3rem;
+  align-items: center;
+  padding: 4rem;
+  justify-content: center;
 }
 
 .container-inicio p {
   color: #fff;
-  text-align: right;
   font-family: var(--var-font-title);
   font-size: 7.4rem;
   font-weight: 400;
@@ -561,7 +560,7 @@ footer {
 /*  ------------ Telas médias ------------------- */
 
 @media (min-width: 1025px) and (max-width: 1225px) {
-  .navigation :nth-child(8) {
+  nav .navigation :nth-child(7) {
     width: 22rem;
     padding: 0 2rem;
   }
@@ -586,12 +585,185 @@ footer {
     margin-right: 1rem;
   }
 
-  .navigation :nth-child(7),
-  .navigation :nth-child(8) {
+  nav .navigation :nth-child(6),
+  nav .navigation :nth-child(7) {
     display: flex;
     min-width: 13rem;
     padding: 0 0.5rem;
     font-size: 1.1rem;
+  }
+
+  /* --------- section inicio ---------- */
+
+  .section-inicio {
+    padding: 0 4rem;
+  }
+
+  .container-inicio {
+    width: 100%;
+    padding: 3rem 0rem;
+    height: auto;
+    justify-content: center;
+  }
+
+  .container-inicio h1 {
+    font-size: 5rem;
+  }
+
+  /* --------------- section Historia --------------- */
+
+  .section-SobreNos {
+    padding: 3rem 2rem;
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  .container-sobreNos {
+    width: 100%;
+    height: auto;
+    padding: 4rem;
+  }
+
+  .container-sobreNos h2 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .nossa-historia {
+    gap: 2rem;
+  }
+
+  .coluna-1,
+  .coluna-2 {
+    width: 100%;
+  }
+
+  .nossa-historia p {
+    font-size: 1.8rem;
+  }
+
+  .container-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container-img img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  /* --------- section como ajudar ---------- */
+
+  .section-ajudar {
+    margin: 5rem 0;
+    padding: 3rem 2rem;
+    gap: 1.5rem;
+  }
+
+  .section-ajudar h2 {
+    font-size: 4rem;
+  }
+
+  .container-ajudar {
+    gap: 1.5rem;
+  }
+
+  .card-ajudar {
+    width: 25rem;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-ajudar img {
+    width: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .section-ajudar h3 {
+    font-size: 2rem;
+  }
+
+  .section-ajudar p {
+    font-size: 1.3rem;
+  }
+
+  .btn-ajudar {
+    width: 10rem;
+    padding: 1rem 1rem;
+    margin-top: 4rem;
+    font-size: 1.2rem;
+  }
+
+  .ajudar-opcao a {
+    font-size: 1.4rem;
+  }
+
+  /* -------------- section frase de efeito-------------- */
+
+  .section-frase {
+    height: 70vh;
+    padding: 10rem 5rem;
+  }
+
+  .section-frase p {
+    width: 100%;
+    font-size: 6rem;
+  }
+
+  /* -------------- section contatos-------------- */
+
+  .section-contatos {
+    margin: 5rem 0;
+    padding: 3rem 2rem;
+    gap: 4rem;
+  }
+
+  .section-contatos h2 {
+    font-size: 4rem;
+  }
+
+  .section-contatos p {
+    margin: 1rem 0;
+  }
+
+  /* ------------ Section Feed instagram  ------------ */
+
+  .section-feedInstagram {
+    height: 100%;
+    padding-bottom: 2rem;
+  }
+
+  /* ----------- Footer ------------ */
+
+  footer {
+    max-width: 100%;
+    background-color: var(--var-green);
+  }
+
+  .container-footer {
+    width: 100%;
+    padding: 7rem 5rem;
+  }
+  .listas-links {
+    gap: 3rem;
+  }
+
+  .container-footer ul {
+    font-size: 1.5rem;
+  }
+
+  .creditos-copywriting {
+    font-size: 1.1rem;
+  }
+
+  .creditos-copywriting p:nth-child(1) {
+    font-size: 1.3rem;
+    color: var(--var-green);
   }
 }
 
@@ -696,6 +868,7 @@ footer {
     padding: 0 2rem;
     display: flex;
     justify-content: center;
+    height: 80vh;
   }
 
   .background-inicio {
@@ -709,10 +882,10 @@ footer {
   .container-inicio {
     width: 100%;
     height: auto;
-    padding: 0;
+    padding: 3rem 2rem;
   }
 
-  h1 {
+  .container-inicio p {
     color: #fff;
     text-align: right;
     font-family: var(--var-font-title);

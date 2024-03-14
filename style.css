@@ -781,6 +781,8 @@ footer {
     font-size: 1.1rem;
   }
 
+  /* --------- section inicio ---------- */
+
   .section-inicio {
     padding: 0 3rem;
   }
@@ -831,6 +833,8 @@ footer {
   .container-infos h2 {
     font-size: 4rem;
   }
+
+  /* ------------ section como ajudar ---------------- */
 
   .section-ajudar {
     padding: 5rem;
@@ -1043,7 +1047,6 @@ footer {
 /* Tela pequenas / celulares */
 
 @media (max-width: 768px) {
-  
   body {
     position: relative;
     overflow-x: hidden;
