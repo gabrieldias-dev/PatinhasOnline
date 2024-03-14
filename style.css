@@ -1043,6 +1043,7 @@ footer {
 /* Tela pequenas / celulares */
 
 @media (max-width: 768px) {
+  
   body {
     position: relative;
     overflow-x: hidden;
