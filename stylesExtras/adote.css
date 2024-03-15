@@ -54,6 +54,11 @@ header {
   justify-content: center;
 }
 
+.menuTelasMenores,
+.menuHamburguer {
+  display: none;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -85,10 +90,10 @@ ul {
   color: var(--var-white);
 }
 
-.navigation li:nth-child(1) a:hover,
-.navigation li:nth-child(2) a:hover,
-.navigation li:nth-child(4) a:hover,
-.navigation li:nth-child(5) a:hover {
+nav .navigation li:nth-child(1) a:hover,
+nav .navigation li:nth-child(2) a:hover,
+nav .navigation li:nth-child(4) a:hover,
+nav .navigation li:nth-child(5) a:hover {
   color: var(--var-green);
 }
 
@@ -108,8 +113,8 @@ ul {
   background-color: var(--var-green);
 }
 
-.navigation :nth-child(6),
-.navigation :nth-child(7) {
+nav .navigation :nth-child(6),
+nav .navigation :nth-child(7) {
   display: flex;
   min-width: 15rem;
   padding: 1.4rem 2.6rem;
@@ -120,13 +125,13 @@ ul {
   border-radius: 10rem;
 }
 
-.navigation :nth-child(6) a,
-.navigation :nth-child(7) a {
+nav .navigation :nth-child(6) a,
+nav .navigation :nth-child(7) a {
   color: var(--var-black);
 }
 
-.navigation :nth-child(6):hover,
-.navigation :nth-child(7):hover {
+nav .navigation :nth-child(6):hover,
+nav .navigation :nth-child(7):hover {
   background-color: var(--var-white);
   cursor: pointer;
 }
@@ -667,8 +672,14 @@ footer {
 
 /*  ------------ Telas médias ------------------- */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 1025px) and (max-width: 1225px) {
+  nav .navigation :nth-child(7) {
+    width: 22rem;
+    padding: 0 2rem;
+  }
+}
 
+@media (min-width: 768px) and (max-width: 1024px) {
   .container-inicio h1 {
     font-size: 2rem;
   }
@@ -677,5 +688,398 @@ footer {
 /* Tela pequenas / celulares */
 
 @media (max-width: 768px) {
-}
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
 
+  header {
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .menuHamburguer {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    z-index: 10;
+  }
+
+  .menuHamburguer :nth-child(1) {
+    width: 8rem;
+  }
+
+  .menuHamburguer :nth-child(2) {
+    filter: invert(1);
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .menuTelasMenores {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    background-color: var(--var-green);
+    z-index: 100;
+    transition: transform 0.5s;
+  }
+
+  .menuTelasMenores .logoPatinhasOnline {
+    margin-bottom: 3rem;
+  }
+
+  .menuTelasMenores .navigation {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .menuTelasMenores .navigation li a {
+    font-size: 2rem;
+    color: white;
+  }
+
+  .fecharMenu {
+    display: flex;
+    justify-content: end;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .fecharMenu img {
+    width: 3.5rem;
+    filter: invert(1);
+  }
+
+  .menuTelasMenores .navigation li:nth-child(n + 6) a {
+    color: black;
+  }
+
+  .menuTelasMenores .navigation li:nth-child(n + 6) {
+    background-color: var(--var-white);
+    min-width: 15rem;
+    padding: 1.4rem 2.6rem;
+    border-radius: 10rem;
+    margin: 0.5rem 0;
+    border: 1px solid black;
+  }
+
+  .menuTelasMenores .navigation li.ativo::before {
+    background-color: var(--var-white);
+  }
+
+  /* --------------- section Inicio --------------- */
+
+  .section-inicio {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+  }
+
+  .background-inicio {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .container-inicio {
+    width: 100%;
+    height: auto;
+    padding: 3rem 2rem;
+  }
+
+  .container-inicio p {
+    color: #fff;
+    text-align: right;
+    font-family: var(--var-font-title);
+    font-size: 4rem;
+    font-weight: 400;
+  }
+
+  /* -------------- section animais -------------- */
+
+  .section-animais {
+    max-width: 100vw;
+    overflow: hidden;
+    background-color: #ebeef1;
+    padding: 3rem 2rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  .carrossel-animais {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: auto;
+
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  /* /* ----------  POP UP AO CLICAR NO CARD------------ */*/
+
+  .popUp-Animais {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: end;
+    width: 104rem;
+    border-radius: 1.6rem;
+    z-index: 15;
+  }
+
+  .popUp-informacao {
+    width: 100%;
+    height: 52rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 2rem;
+    background-color: var(--var-white);
+    border-radius: 1.6rem 1.6rem 0 0;
+  }
+
+  .popUp-info {
+    width: 30rem;
+    color: black;
+  }
+
+  .popUp-info p:nth-child(2) {
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+
+  .popUp-info p {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    font-weight: 500;
+  }
+
+  .popUp-historia {
+    width: calc(100% - 30rem);
+    height: 100%;
+    padding: 3rem 0;
+    position: relative;
+  }
+
+  .popUp-historia h3 {
+    text-align: center;
+    color: var(--var-green);
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+
+  .popUp-historia p {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    font-weight: 500;
+  }
+
+  .btns-adote-apadrinhe {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .btn-adote-apadrinhe {
+    border: none;
+    width: 32rem;
+    height: 5.68rem;
+    border-radius: 1.8rem;
+    background-color: var(--var-green);
+    font-size: 1.8rem;
+    overflow: hidden;
+  }
+
+  .btn-adote-apadrinhe a {
+    padding: 1.8rem 11.5rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  #info-vacinas {
+    width: 100%;
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: white;
+    font-weight: 500;
+    padding: 4rem 0 2rem 0;
+    border-radius: 0 0 1.6rem 1.6rem;
+    /* border-bottom-right-radius: 1.6rem;
+  border-bottom-left-radius: 1.6rem; */
+  }
+
+  .btn-fechar {
+    border: none;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1.6rem;
+    background-color: var(--var-green);
+    font-size: 3rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 1rem;
+    transition: transform 0.3s;
+  }
+
+  .btn-fechar:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+
+  /* ---------- FIM DO POP UP ------------ */
+
+  .container-card {
+    height: 100%;
+    width: 100%;
+    padding: 1rem 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 4rem;
+    transition: all 1s;
+  }
+
+  .container-card1 {
+    position: relative;
+    left: 0;
+  }
+
+  .container-card2 {
+    position: absolute;
+    top: 0;
+    right: -100%;
+  }
+
+  .boxCard {
+    width: 32rem;
+    height: 39rem;
+    background-color: var(--var-white);
+    padding: 1rem;
+    border-radius: 2rem;
+  }
+
+  .box-imagem {
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    border-radius: 2rem;
+    overflow: hidden;
+
+    display: flex;
+    align-items: end;
+    padding: 1rem;
+    background-color: #818181;
+    z-index: 1;
+  }
+
+  .imagem-animal {
+    position: absolute;
+    width: 100%;
+    top: -5%;
+    left: 0;
+    z-index: -1;
+  }
+
+  .card15 {
+    height: 100%;
+    transform: scale(1.1);
+  }
+
+  .icon-animal {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .icon-img-info {
+    cursor: pointer;
+  }
+
+  .infoIconAnimais span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--var-white);
+    width: 7.9rem;
+    height: 2.9rem;
+    border-radius: 10rem;
+    font-family: var(--var-font);
+    font-weight: 500;
+    font-size: 1.3rem;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+
+  .infoIconAnimais {
+    display: flex;
+    gap: 0.3rem;
+  }
+
+  .infoIconAnimais:hover span {
+    opacity: 100%;
+  }
+
+  .info-animal {
+    padding: 1rem;
+  }
+
+  .info-animal h4 {
+    font-size: 2.4rem;
+  }
+
+  .info-animal > div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    font-family: var(--var-font);
+    font-weight: 500;
+  }
+
+  .btn-animais {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 3rem;
+  }
+
+  .btn-animais button {
+    color: var(--var-green);
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-animais .anterior {
+    color: #a5c21387;
+  }
+
+  .seta-anterior {
+    transform: rotateY(180deg);
+  }
+}

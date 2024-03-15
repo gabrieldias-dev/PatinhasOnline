@@ -1145,7 +1145,6 @@ footer {
     padding: 0 2rem;
     display: flex;
     justify-content: center;
-    align-items: center;
   }
 
   .background-inicio {
@@ -1159,7 +1158,7 @@ footer {
   .container-inicio {
     width: 100%;
     height: auto;
-    padding: 0;
+    padding: 3rem 0;
   }
 
   h1 {
