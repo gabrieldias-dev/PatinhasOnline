@@ -89,7 +89,7 @@ cards.forEach(function (boxCard) {
         fotoAnimal.src = "../assets/AnimaisParaAdotar/Amora.jpg";
         iconeSexo.src = "../assets/icon/femea.svg";
         nomeAnimal.innerHTML = "Amora";
-        nascimentoAnimal.innerHTML = "2021";
+        nascimentoAnimal.innerHTML = "Nasci: 2021";
         idadeAnimal.innerHTML = "Aprox: 3 anos";
         sexoAnimal.innerHTML = "Sexo: Feminino";
         corAnimal.innerHTML = "Cor: Caramelo";

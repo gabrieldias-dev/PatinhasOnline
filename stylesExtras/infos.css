@@ -567,6 +567,7 @@ footer {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+
   nav {
     width: 100%;
     margin: 4rem 1rem;
@@ -606,9 +607,6 @@ footer {
     justify-content: center;
   }
 
-  .container-inicio h1 {
-    font-size: 5rem;
-  }
 
   /* --------------- section Historia --------------- */
 
