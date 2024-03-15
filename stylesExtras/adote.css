@@ -829,13 +829,14 @@ footer {
     width: 100%;
     display: flex;
     height: auto;
+    padding: 0;
 
     justify-content: center;
     align-items: center;
     overflow: hidden;
   }
 
-  /* /* ----------  POP UP AO CLICAR NO CARD------------ */*/
+  /* ----------  POP UP AO CLICAR NO CARD------------ */
 
   .popUp-Animais {
     position: absolute;
@@ -949,116 +950,82 @@ footer {
   }
 
   /* ---------- FIM DO POP UP ------------ */
+  /* ---------- Começa CARDS ANIMAIS ----- */
 
   .container-card {
-    height: 100%;
     width: 100%;
-    padding: 1rem 10rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 4rem;
-    transition: all 1s;
-  }
-
-  .container-card1 {
-    position: relative;
-    left: 0;
-  }
-
-  .container-card2 {
-    position: absolute;
-    top: 0;
-    right: -100%;
+    padding: 0;
+    justify-content: center;
+    gap: 2rem;
+    overflow: hidden;
   }
 
   .boxCard {
-    width: 32rem;
-    height: 39rem;
-    background-color: var(--var-white);
+    width: 16rem;
+    height: 32rem;
+    padding: 0;
     padding: 1rem;
-    border-radius: 2rem;
   }
 
   .box-imagem {
-    position: relative;
     width: 100%;
-    height: 30rem;
-    border-radius: 2rem;
+    height: 70%;
     overflow: hidden;
-
-    display: flex;
-    align-items: end;
     padding: 1rem;
-    background-color: #818181;
-    z-index: 1;
   }
 
   .imagem-animal {
     position: absolute;
     width: 100%;
-    top: -5%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
     left: 0;
+    transform: scale(1.2);
     z-index: -1;
   }
-
+  
   .card15 {
     height: 100%;
     transform: scale(1.1);
   }
 
   .icon-animal {
-    position: relative;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.3rem;
   }
 
-  .icon-img-info {
-    cursor: pointer;
-  }
-
-  .infoIconAnimais span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: var(--var-white);
-    width: 7.9rem;
-    height: 2.9rem;
-    border-radius: 10rem;
-    font-family: var(--var-font);
-    font-weight: 500;
-    font-size: 1.3rem;
-    opacity: 0;
-    transition: all 0.5s;
+  .sexo-animal {
+    width: 3rem;
   }
 
   .infoIconAnimais {
-    display: flex;
-    gap: 0.3rem;
+    width: 2.8rem;
   }
 
-  .infoIconAnimais:hover span {
-    opacity: 100%;
-  }
-
-  .info-animal {
-    padding: 1rem;
+  .infoIconAnimais span {
+    width: 100%;
+    padding: 0 0.3rem;
+    font-size: 0.5rem;
   }
 
   .info-animal h4 {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
   }
 
   .info-animal > div {
     display: flex;
-    justify-content: space-between;
-    font-size: 1.6rem;
-    font-family: var(--var-font);
-    font-weight: 500;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+  }
+
+  .todos-animais {
+    margin-top: 1rem;
+  }
+
+  .todos-animais a {
+    font-size: 1.8rem;
   }
 
   .btn-animais {
@@ -1081,5 +1048,78 @@ footer {
 
   .seta-anterior {
     transform: rotateY(180deg);
+  }
+
+  /* -------------- section Como ajudar -------------- */
+
+  .section-ajudar {
+    overflow: hidden;
+    padding: 4rem 2rem;
+    height: auto;
+  }
+  .container-ajudar {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  /* --------- section frase --------------- */
+
+  .section-frase {
+    width: 100%;
+    height: 50vh;
+    padding: 4rem 1rem;
+    object-fit: cover;
+  }
+
+  .section-frase img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .section-frase p {
+    width: 100%;
+    font-size: 5rem;
+  }
+
+  /* ----------- Footer ------------ */
+
+  footer {
+    max-width: 100%;
+    height: auto;
+    background-color: var(--var-green);
+    padding: 0;
+  }
+
+  .container-footer {
+    width: 100%;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    height: auto;
+  }
+
+  .container-footer ul {
+    font-size: 1.9rem;
+  }
+
+  .listas-links {
+    padding-left: 1.6rem;
+    flex-wrap: wrap;
+  }
+
+  .redes-sociais {
+    padding-left: 2rem;
+    align-items: center;
+  }
+
+  .creditos-copywriting {
+    font-size: 1.1rem;
+  }
+
+  .creditos-copywriting p:nth-child(1) {
+    font-size: 1.3rem;
+    color: var(--var-green);
   }
 }
