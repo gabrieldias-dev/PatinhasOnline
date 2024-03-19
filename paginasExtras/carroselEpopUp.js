@@ -45,6 +45,9 @@ let paragrafoThree = document.querySelector("#paragrafoThree");
 // Adiciona um event listener a cada card
 cards.forEach(function (boxCard) {
   boxCard.addEventListener("click", function () {
+    let popUp = document.querySelector(".popUp-Animais");
+    let alturaDoPopUp = popUp.offsetHeight;
+
     let middleOfPage =
       document.body.scrollHeight / 2 - window.innerHeight / 2 - 520;
     let popUpAnimais = document.querySelector(".popUp-Animais");
@@ -159,7 +162,9 @@ cards.forEach(function (boxCard) {
         break;
 
       default:
-        window.alert("Informações do nosso amiguinho estão sendo atualizadas, tente mais tarde (;");
+        window.alert(
+          "Informações do nosso amiguinho estão sendo atualizadas, tente mais tarde (;"
+        );
         return;
     }
 

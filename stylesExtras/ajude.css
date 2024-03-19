@@ -42,6 +42,11 @@ header {
   justify-content: center;
 }
 
+.menuTelasMenores,
+.menuHamburguer {
+  display: none;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -73,10 +78,10 @@ ul {
   color: var(--var-white);
 }
 
-.navigation li:nth-child(1) a:hover,
-.navigation li:nth-child(2) a:hover,
-.navigation li:nth-child(3) a:hover,
-.navigation li:nth-child(5) a:hover {
+nav .navigation li:nth-child(1) a:hover,
+nav .navigation li:nth-child(2) a:hover,
+nav .navigation li:nth-child(3) a:hover,
+nav .navigation li:nth-child(5) a:hover {
   color: var(--var-green);
 }
 
@@ -113,8 +118,8 @@ ul {
   color: var(--var-black);
 }
 
-.navigation :nth-child(6):hover,
-.navigation :nth-child(7):hover {
+nav .navigation :nth-child(6):hover,
+nav .navigation :nth-child(7):hover {
   background-color: var(--var-white);
   cursor: pointer;
 }
@@ -371,7 +376,6 @@ footer {
   text-decoration: underline;
 }
 
-
 /*  ------------ Telas médias ------------------- */
 
 @media (min-width: 1025px) and (max-width: 1225px) {
@@ -379,17 +383,350 @@ footer {
     width: 22rem;
     padding: 0 2rem;
   }
+
+  footer {
+    max-width: 100%;
+    background-color: var(--var-green);
+  }
+
+  .container-footer {
+    width: 100%;
+    padding: 7rem 5rem;
+  }
+  .listas-links {
+    width: 100%;
+    gap: 3rem;
+    justify-content: space-evenly;
+  }
+
+  .container-footer ul {
+    font-size: 1.8rem;
+  }
+
+  .creditos-copywriting {
+    font-size: 1.3rem;
+  }
+
+  .creditos-copywriting p:nth-child(1) {
+    font-size: 1.5rem;
+  }
 }
 
-
 @media (min-width: 768px) and (max-width: 1024px) {
+  nav {
+    width: 100%;
+    margin: 4rem 1rem;
+  }
 
-  .container-inicio h1 {
+  .logoPatinhasOnline {
+    width: 10rem;
+  }
+
+  ul {
+    font-size: 1.3rem;
+  }
+
+  .navigation li {
+    padding: 1rem;
+    margin-right: 1rem;
+  }
+
+  nav .navigation :nth-child(6),
+  nav .navigation :nth-child(7) {
+    display: flex;
+    min-width: 13rem;
+    padding: 0 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  /* -------- section inicio ------- */
+
+  .section-inicio {
+    padding: 2rem 4rem;
+  }
+
+  .container-inicio {
+    width: 100%;
+    height: auto;
+    padding: 3rem 0rem;
+    height: auto;
+    justify-content: center;
+  }
+
+  .container-inicio p {
+    font-size: 7.4rem;
+    text-align: center;
+    padding: 0;
+  }
+
+  /* --------- section como ajudar ---------- */
+
+  .section-ajudar {
+    margin: 5rem 0;
+    padding: 3rem 2rem;
+    gap: 1.5rem;
+  }
+
+  .section-ajudar h2 {
+    font-size: 4rem;
+  }
+
+  .container-ajudar {
+    gap: 1.5rem;
+  }
+
+  .card-ajudar {
+    width: 25rem;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-ajudar img {
+    width: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .section-ajudar h3 {
     font-size: 2rem;
+  }
+
+  .section-ajudar p {
+    font-size: 1.3rem;
+  }
+
+  .btn-ajudar {
+    width: 10rem;
+    padding: 1rem 1rem;
+    margin-top: 4rem;
+    font-size: 1.2rem;
+  }
+
+  .ajudar-opcao a {
+    font-size: 1.4rem;
+  }
+
+  /* ------------ Section Feed instagram  ------------ */
+
+  .section-feedInstagram {
+    height: 100%;
+    padding-bottom: 2rem;
+  }
+
+  /* ----------- Footer ------------ */
+
+  footer {
+    max-width: 100%;
+    background-color: var(--var-green);
+  }
+
+  .container-footer {
+    width: 100%;
+    padding: 7rem 5rem;
+  }
+  .listas-links {
+    gap: 3rem;
+  }
+
+  .container-footer ul {
+    font-size: 1.5rem;
+  }
+
+  .creditos-copywriting {
+    font-size: 1.1rem;
+  }
+
+  .creditos-copywriting p:nth-child(1) {
+    font-size: 1.3rem;
+    color: var(--var-green);
   }
 }
 
 /* Tela pequenas / celulares */
 
 @media (max-width: 768px) {
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  header {
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .menuHamburguer {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    z-index: 10;
+  }
+
+  .menuHamburguer :nth-child(1) {
+    width: 8rem;
+  }
+
+  .menuHamburguer :nth-child(2) {
+    filter: invert(1);
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .menuTelasMenores {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    background-color: var(--var-green);
+    z-index: 100;
+    transition: transform 0.5s;
+  }
+
+  .menuTelasMenores .logoPatinhasOnline {
+    margin-bottom: 3rem;
+  }
+
+  .menuTelasMenores .navigation {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .menuTelasMenores .navigation li a {
+    font-size: 2rem;
+    color: white;
+  }
+
+  .fecharMenu {
+    display: flex;
+    justify-content: end;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .fecharMenu img {
+    width: 3.5rem;
+    filter: invert(1);
+  }
+
+  .menuTelasMenores .navigation li:nth-child(n + 6) a {
+    color: black;
+  }
+
+  .menuTelasMenores .navigation li:nth-child(n + 6) {
+    background-color: var(--var-white);
+    min-width: 15rem;
+    padding: 1.4rem 2.6rem;
+    border-radius: 10rem;
+    margin: 0.5rem 0;
+    border: 1px solid black;
+  }
+
+  .menuTelasMenores .navigation li.ativo::before {
+    background-color: var(--var-white);
+  }
+
+  /* --------------- section Inicio --------------- */
+
+  .section-inicio {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+  }
+
+  .background-inicio {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .container-inicio {
+    width: 100%;
+    height: auto;
+    padding: 3rem 2rem;
+  }
+
+  .container-inicio p {
+    color: #fff;
+    text-align: right;
+    font-family: var(--var-font-title);
+    font-size: 4rem;
+    font-weight: 400;
+  }
+
+  /* -------------- section Como ajudar -------------- */
+
+  .section-ajudar {
+    overflow: hidden;
+    padding: 4rem 2rem;
+    height: auto;
+  }
+  .container-ajudar {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  /* ------------ Section Feed instagram  ------------ */
+
+  .section-feedInstagram {
+    height: 100%;
+    padding-bottom: 2rem;
+  }
+
+  /* ----------- Footer ------------ */
+
+  footer {
+    max-width: 100%;
+    height: auto;
+    background-color: var(--var-green);
+    padding: 0;
+  }
+
+  .container-footer {
+    width: 100%;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    height: auto;
+  }
+
+  .container-footer ul {
+    font-size: 1.9rem;
+  }
+
+  .listas-links {
+    padding-left: 1.6rem;
+    flex-wrap: wrap;
+  }
+
+  .redes-sociais {
+    padding-left: 2rem;
+    align-items: center;
+  }
+
+  .creditos-copywriting {
+    font-size: 1.1rem;
+  }
+
+  .creditos-copywriting p:nth-child(1) {
+    font-size: 1.3rem;
+    color: var(--var-green);
+  }
 }

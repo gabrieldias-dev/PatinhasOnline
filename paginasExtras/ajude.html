@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,30 @@
 
 <body>
     <header>
+
+        <div class="menuHamburguer">
+            <img src="../assets/LogoPatinhas.svg" alt="">
+            <img src="../assets/icon/openMenu.png" alt="" onclick="openMenu()">
+        </div>
+
+        <div class="menuTelasMenores">
+            <div class="fecharMenu" onclick="closedMenu()">
+                <img src="../assets/icon/closeMenu.png" alt="">
+            </div>
+            <a href="index.html">
+                <img src="../assets/LogoPatinhas.svg" alt="" class="logoPatinhasOnline">
+            </a>
+            <ul class="navigation">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="infos.html">INFOS</a></li>
+                <li><a href="adote.html">ADOTE</a></li>
+                <li class="ativo"><a href="ajude.html">AJUDE</a></li>
+                <li><a href="">LOJA</a></li>
+                <li><a href="apadrinhe.html">APADRINHE</a></li>
+                <li><a href="doar.html">FAÇA UMA DOAÇÃO</a></li>
+            </ul>
+        </div>
+
         <nav>
             <a href="../index.html"><img src="../assets/LogoPatinhas.svg" alt="" class="logoPatinhasOnline"></a>
             <ul class="navigation">
@@ -150,6 +175,8 @@
             </p>
         </div>
     </footer>
+
+    <script src="../menuCelular.js"></script>
 
 </body>
 
