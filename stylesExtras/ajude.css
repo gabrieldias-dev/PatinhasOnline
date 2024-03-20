@@ -413,6 +413,7 @@ footer {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  
   nav {
     width: 100%;
     margin: 4rem 1rem;
@@ -547,6 +548,7 @@ footer {
 /* Tela pequenas / celulares */
 
 @media (max-width: 768px) {
+
   body {
     position: relative;
     overflow-x: hidden;
