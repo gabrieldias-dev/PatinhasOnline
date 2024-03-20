@@ -475,7 +475,6 @@ footer {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
   nav {
     width: 100%;
     margin: 4rem 1rem;
@@ -500,6 +499,147 @@ footer {
     min-width: 13rem;
     padding: 0 0.5rem;
     font-size: 1.1rem;
+  }
+
+  /* ---------- section doação ---------- */
+
+  .section-doacao {
+    width: 100%;
+    height: auto;
+    padding: 3rem 2rem;
+    gap: 2rem;
+  }
+
+  .info-doacao {
+    width: 40rem;
+    height: 78.8rem;
+  }
+
+  .apadrinhamento {
+    width: 40rem;
+  }
+
+  .apadrinhamentoMensagem {
+    width: 100%;
+    height: auto;
+    padding: 5rem 2rem;
+  }
+
+  .apadrinhamentoMensagem h2 {
+    font-size: 6rem;
+  }
+
+  .apadrinhamentoMensagem p {
+    font-size: 1.8rem;
+  }
+
+  .btnValor {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 11.8rem;
+    height: 4rem;
+    border-radius: 0.6rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .btnApadrinheAgora {
+    border: none;
+    width: 100%;
+    height: 5.8rem;
+    display: flex;
+    gap: 0.6rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--var-white);
+    background-color: var(--var-green);
+    font-family: var(--var-font);
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .paginaDoar {
+    width: 100%;
+    height: 24.4rem;
+    background-color: var(--var-green);
+    margin-top: 3rem;
+    padding: 5.4rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .paginaDoar p,
+  .paginaDoar a {
+    color: var(--var-black);
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .input-optionValor {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .btnValor label {
+    background: #fff no-repeat center center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+  }
+
+  .btnValor label span {
+    z-index: 1;
+    text-decoration: none;
+  }
+  .btnValor label input[type="radio"] {
+    all: unset;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 0.6rem;
+    border: 1px solid #16161633;
+  }
+  .btnValor label input[type="radio"]:checked {
+    background-color: var(--var-green);
+    border: none;
+  }
+
+  .btnValor label input[type="radio"]:checked + span {
+    color: #ffffff;
+  }
+
+  .btnDoar {
+    border: none;
+    width: 100%;
+    height: 5.8rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--var-green);
+    background-color: var(--var-white);
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: var(--var-font);
+    cursor: pointer;
+    text-decoration: none;
   }
 }
 

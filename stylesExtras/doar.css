@@ -37,6 +37,11 @@ header {
   justify-content: center;
 }
 
+.menuTelasMenores,
+.menuHamburguer {
+  display: none;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -235,27 +240,6 @@ ul {
   font-weight: 500;
 }
 
-.apadrinhamentoValores {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 1rem;
-}
-
-.btnValor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 11.8rem;
-  height: 4rem;
-  border: 1px solid #16161633;
-  border-radius: 0.6rem;
-  font-size: 1.6rem;
-  font-weight: 600;
-  cursor: pointer;
-}
-
 .btnPagBank {
   border: none;
   width: 100%;
@@ -423,7 +407,6 @@ footer {
   text-decoration: underline;
 }
 
-
 /*  ------------ Telas médias ------------------- */
 
 @media (min-width: 1025px) and (max-width: 1225px) {
@@ -431,17 +414,310 @@ footer {
     width: 22rem;
     padding: 0 2rem;
   }
+
+  .section-doacao {
+    gap: 2rem;
+    height: auto;
+  }
+
+  .doacao {
+    width: 50rem;
+  }
+
+  .doacaoMensagem {
+    width: 100%;
+    height: auto;
+    padding: 3rem 2rem;
+    gap: 1.5rem;
+  }
+
+  .doacaoMensagem h2 {
+    font-size: 6rem;
+  }
+
+  .doacaoMensagem p {
+    font-size: 1.7rem;
+  }
+
+  footer {
+    max-width: 100%;
+    background-color: var(--var-green);
+  }
+
+  .container-footer {
+    width: 100%;
+    padding: 7rem 5rem;
+  }
+  .listas-links {
+    width: 100%;
+    gap: 3rem;
+    justify-content: space-evenly;
+  }
+
+  .container-footer ul {
+    font-size: 1.8rem;
+  }
+
+  .creditos-copywriting {
+    font-size: 1.3rem;
+  }
+
+  .creditos-copywriting p:nth-child(1) {
+    font-size: 1.5rem;
+  }
 }
 
-
 @media (min-width: 768px) and (max-width: 1024px) {
+  nav {
+    width: 100%;
+    margin: 4rem 1rem;
+  }
 
-  .container-inicio h1 {
-    font-size: 2rem;
+  .logoPatinhasOnline {
+    width: 10rem;
+  }
+
+  ul {
+    font-size: 1.3rem;
+  }
+
+  .navigation li {
+    padding: 1rem;
+    margin-right: 1rem;
+  }
+
+  nav .navigation :nth-child(6),
+  nav .navigation :nth-child(7) {
+    display: flex;
+    min-width: 13rem;
+    padding: 0 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  /* ---------- section doação ---------- */
+
+  .section-doacao {
+    gap: 2rem;
+    width: 100%;
+    height: auto;
+    padding: 3em 2rem;
+  }
+
+  .info-doacao {
+    width: 100%;
+  }
+
+  .info-doacao p {
+    font-size: 1.6rem;
+  }
+
+  .doacao {
+    width: 40rem;
+  }
+
+  .doacaoMensagem {
+    width: 100%;
+    height: auto;
+    padding: 3rem 2rem;
+    gap: 1.5rem;
+  }
+
+  .doacaoMensagem h2 {
+    font-size: 6rem;
+  }
+
+  .doacaoMensagem p {
+    font-size: 1.7rem;
   }
 }
 
 /* Tela pequenas / celulares */
 
 @media (max-width: 768px) {
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  header {
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .menuHamburguer {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    z-index: 10;
+  }
+
+  .menuHamburguer :nth-child(1) {
+    width: 8rem;
+  }
+
+  .menuHamburguer :nth-child(2) {
+    filter: invert(1);
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .menuTelasMenores {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    background-color: var(--var-green);
+    z-index: 100;
+    transition: transform 0.5s;
+  }
+
+  .menuTelasMenores .logoPatinhasOnline {
+    margin-bottom: 3rem;
+  }
+
+  .menuTelasMenores .navigation {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .menuTelasMenores .navigation li a {
+    font-size: 2rem;
+    color: white;
+  }
+
+  .fecharMenu {
+    display: flex;
+    justify-content: end;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .fecharMenu img {
+    width: 3.5rem;
+    filter: invert(1);
+  }
+
+  .menuTelasMenores .navigation li:nth-child(n + 6) a {
+    color: black;
+  }
+
+  .menuTelasMenores .navigation li:nth-child(n + 6) {
+    background-color: var(--var-white);
+    min-width: 15rem;
+    padding: 1.4rem 2.6rem;
+    border-radius: 10rem;
+    margin: 0.5rem 0;
+    border: 1px solid black;
+  }
+
+  .menuTelasMenores .navigation li.ativo::before {
+    background-color: var(--var-white);
+  }
+
+  /* ---------- section doações ---------- */
+
+  .section-doacao {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 3rem 2rem;
+  }
+
+  .info-doacao {
+    width: 100%;
+    height: auto;
+  }
+
+  .doacao {
+    width: 100%;
+    height: auto;
+  }
+
+  .doacaoMensagem {
+    width: 100%;
+    height: auto;
+    padding: 3rem 2rem;
+  }
+
+  .doacaoMensagem h2 {
+    font-size: 5.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .doacaoMensagem p {
+    font-size: 1.7rem;
+    margin: 1.5rem 0;
+  }
+
+  .btnPagBank {
+    height: 5rem;
+  }
+
+  .btnApadrinhe {
+    height: 5rem;
+    font-size: 1.7rem;
+  }
+
+  /* ------------ Section Feed instagram  ------------ */
+
+  .section-feedInstagram {
+    height: 100%;
+    padding-bottom: 2rem;
+  }
+
+  /* ----------- Footer ------------ */
+
+  footer {
+    max-width: 100%;
+    height: auto;
+    background-color: var(--var-green);
+    padding: 0;
+  }
+
+  .container-footer {
+    width: 100%;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    height: auto;
+  }
+
+  .container-footer ul {
+    font-size: 1.9rem;
+  }
+
+  .listas-links {
+    padding-left: 1.6rem;
+    flex-wrap: wrap;
+  }
+
+  .redes-sociais {
+    padding-left: 2rem;
+    align-items: center;
+  }
+
+  .creditos-copywriting {
+    font-size: 1.1rem;
+  }
+
+  .creditos-copywriting p:nth-child(1) {
+    font-size: 1.3rem;
+    color: var(--var-green);
+  }
 }
