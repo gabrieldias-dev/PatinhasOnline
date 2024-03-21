@@ -726,11 +726,9 @@ footer {
   .creditos-copywriting p:nth-child(1) {
     font-size: 1.5rem;
   }
-
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
   nav {
     width: 100%;
     margin: 4rem 1rem;
@@ -994,7 +992,6 @@ footer {
 /* Tela pequenas / celulares */
 
 @media (max-width: 768px) {
-
   body {
     position: relative;
     overflow-x: hidden;
@@ -1107,7 +1104,7 @@ footer {
   .container-inicio {
     width: 100%;
     height: auto;
-    padding: 3rem 2rem;
+    padding: 8rem 2rem;
   }
 
   .container-inicio p {
@@ -1183,11 +1180,11 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 1em;
   }
 
   .popUp-info .box-imagem {
-    height: 40rem;
+    height: 30rem;
   }
 
   .popUp-info p:nth-child(1) {
@@ -1236,36 +1233,6 @@ footer {
     padding: 0rem;
     color: white;
     text-decoration: none;
-  }
-
-  #info-vacinas {
-    width: 100%;
-    font-size: 1.6rem;
-    text-align: center;
-    background-color: white;
-    font-weight: 500;
-    padding: 4rem 0 2rem 0;
-    border-radius: 0 0 1.6rem 1.6rem;
-    /* border-bottom-right-radius: 1.6rem;
-  border-bottom-left-radius: 1.6rem; */
-  }
-
-  .btn-fechar {
-    border: none;
-    width: 5rem;
-    height: 5rem;
-    border-radius: 1.6rem;
-    background-color: var(--var-green);
-    font-size: 3rem;
-    font-weight: 500;
-    color: white;
-    margin-bottom: 1rem;
-    transition: transform 0.3s;
-  }
-
-  .btn-fechar:hover {
-    cursor: pointer;
-    transform: scale(1.05);
   }
 
   /* ---------- FIM DO POP UP ------------ */
