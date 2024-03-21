@@ -529,6 +529,42 @@ footer {
   .doacaoMensagem p {
     font-size: 1.7rem;
   }
+
+  /* ------------ Section Feed instagram  ------------ */
+
+  .section-feedInstagram {
+    height: 100%;
+    padding-bottom: 2rem;
+  }
+
+  /* ----------- Footer ------------ */
+
+  footer {
+    max-width: 100%;
+    background-color: var(--var-green);
+  }
+
+  .container-footer {
+    width: 100%;
+    padding: 7rem 5rem;
+  }
+  .listas-links {
+    gap: 3rem;
+  }
+
+  .container-footer ul {
+    font-size: 1.5rem;
+  }
+
+  .creditos-copywriting {
+    font-size: 1.1rem;
+  }
+
+  .creditos-copywriting p:nth-child(1) {
+    font-size: 1.3rem;
+    color: var(--var-green);
+  }
+
 }
 
 /* Tela pequenas / celulares */

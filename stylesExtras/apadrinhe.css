@@ -169,7 +169,6 @@ nav .navigation :nth-child(7):hover {
 .section-doacao {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   width: 100%;
   height: 86rem;
   padding: 4rem 10rem;
@@ -472,6 +471,38 @@ footer {
     width: 22rem;
     padding: 0 2rem;
   }
+
+  .section-doacao {
+    gap: 2rem;
+    height: auto;
+  }
+
+  footer {
+    max-width: 100%;
+    background-color: var(--var-green);
+  }
+
+  .container-footer {
+    width: 100%;
+    padding: 7rem 5rem;
+  }
+  .listas-links {
+    width: 100%;
+    gap: 3rem;
+    justify-content: space-evenly;
+  }
+
+  .container-footer ul {
+    font-size: 1.8rem;
+  }
+
+  .creditos-copywriting {
+    font-size: 1.3rem;
+  }
+
+  .creditos-copywriting p:nth-child(1) {
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -512,7 +543,7 @@ footer {
 
   .info-doacao {
     width: 40rem;
-    height: 78.8rem;
+    height: auto;
   }
 
   .apadrinhamento {
@@ -521,7 +552,6 @@ footer {
 
   .apadrinhamentoMensagem {
     width: 100%;
-    height: auto;
     padding: 5rem 2rem;
   }
 
@@ -530,116 +560,56 @@ footer {
   }
 
   .apadrinhamentoMensagem p {
-    font-size: 1.8rem;
-  }
-
-  .btnValor {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 11.8rem;
-    height: 4rem;
-    border-radius: 0.6rem;
-    font-size: 1.6rem;
-    font-weight: 600;
-    cursor: pointer;
+    font-size: 1.7rem;
   }
 
   .btnApadrinheAgora {
-    border: none;
-    width: 100%;
-    height: 5.8rem;
-    display: flex;
-    gap: 0.6rem;
-    justify-content: center;
-    align-items: center;
-    color: var(--var-white);
-    background-color: var(--var-green);
-    font-family: var(--var-font);
-    border-radius: 0.8rem;
-    font-size: 1.8rem;
-    font-weight: 600;
-    cursor: pointer;
+    height: 5rem;
+    font-size: 1.7rem;
   }
 
   .paginaDoar {
-    width: 100%;
-    height: 24.4rem;
-    background-color: var(--var-green);
-    margin-top: 3rem;
-    padding: 5.4rem 4rem;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-  }
-
-  .paginaDoar p,
-  .paginaDoar a {
-    color: var(--var-black);
-    font-size: 2rem;
-    font-weight: 500;
-    text-align: center;
-    text-decoration: none;
-  }
-
-  .input-optionValor {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .btnValor label {
-    background: #fff no-repeat center center;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    white-space: nowrap;
-  }
-
-  .btnValor label span {
-    z-index: 1;
-    text-decoration: none;
-  }
-  .btnValor label input[type="radio"] {
-    all: unset;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 0.6rem;
-    border: 1px solid #16161633;
-  }
-  .btnValor label input[type="radio"]:checked {
-    background-color: var(--var-green);
-    border: none;
-  }
-
-  .btnValor label input[type="radio"]:checked + span {
-    color: #ffffff;
+    height: auto;
   }
 
   .btnDoar {
-    border: none;
+    height: 5rem;
+    font-size: 1.7rem;
+  }
+
+  /* ------------ Section Feed instagram  ------------ */
+
+  .section-feedInstagram {
+    height: 100%;
+    padding-bottom: 2rem;
+  }
+
+  /* ----------- Footer ------------ */
+
+  footer {
+    max-width: 100%;
+    background-color: var(--var-green);
+  }
+
+  .container-footer {
     width: 100%;
-    height: 5.8rem;
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
+    padding: 7rem 5rem;
+  }
+  .listas-links {
+    gap: 3rem;
+  }
+
+  .container-footer ul {
+    font-size: 1.5rem;
+  }
+
+  .creditos-copywriting {
+    font-size: 1.1rem;
+  }
+
+  .creditos-copywriting p:nth-child(1) {
+    font-size: 1.3rem;
     color: var(--var-green);
-    background-color: var(--var-white);
-    border-radius: 0.8rem;
-    font-size: 1.8rem;
-    font-weight: 600;
-    font-family: var(--var-font);
-    cursor: pointer;
-    text-decoration: none;
   }
 }
 
@@ -655,6 +625,7 @@ footer {
     width: 100%;
     overflow: hidden;
     height: 100vh;
+    z-index: 1;
   }
 
   nav {
@@ -759,6 +730,7 @@ footer {
     width: 100%;
     height: auto;
     transform: translateY(-8rem);
+    z-index: 2;
   }
 
   .apadrinhamentoMensagem {
