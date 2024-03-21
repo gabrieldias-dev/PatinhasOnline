@@ -770,7 +770,6 @@ footer {
   .creditos-copywriting p:nth-child(1) {
     font-size: 1.5rem;
   }
-
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -1070,8 +1069,6 @@ footer {
     font-size: 1.3rem;
     color: var(--var-green);
   }
-
-  
 }
 
 /* Tela pequenas / celulares */
@@ -1097,7 +1094,7 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 1rem;
+    padding: 2rem;
     z-index: 10;
   }
 
@@ -1110,10 +1107,6 @@ footer {
     width: 4rem;
     height: 4rem;
   }
-
-  /* .menuHamburguer img {
-    width: 5rem;
-  } */
 
   .menuTelasMenores {
     width: 100%;
@@ -1196,7 +1189,7 @@ footer {
     color: #fff;
     text-align: right;
     font-family: var(--var-font-title);
-    font-size: 4rem;
+    font-size: 3.6rem;
     font-weight: 400;
   }
 

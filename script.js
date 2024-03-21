@@ -15,11 +15,14 @@
 // }
 
 function ajustarSlidesPorViewport() {
-  let elemento = document.querySelector("#swiperAnimais");
+  let carrosselAnimais = document.querySelector("#swiperAnimais");
+  let historiasFelizes = document.querySelector("#swiperHistorias");
   if (window.innerWidth < 768) {
-    elemento.setAttribute("slides-per-view", "2");
+    carrosselAnimais.setAttribute("slides-per-view", "2");
+    historiasFelizes.setAttribute("navigation", "false");
   } else {
-    elemento.setAttribute("slides-per-view", "3");
+    carrosselAnimais.setAttribute("slides-per-view", "3");
+    historiasFelizes.setAttribute("navigation", "true");
   }
 }
 
