@@ -1,6 +1,24 @@
+let menu = document.querySelector(".menuTelasMenores");
+let apadrinhamento = document.querySelector(".apadrinhamento");
+
+function openMenu() {
+  menu.style.transform = "translateX(0%)";
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+  apadrinhamento.style.zIndex = "1"
+  document.body.style.overflow = "hidden";
+}
+
+function closedMenu() {
+  menu.style.transform = "translateX(100%)";
+  apadrinhamento.style.zIndex = "2";
+  document.body.style.overflow = "overlay";
+}
 
 const checkboxes = document.querySelectorAll('input[type="radio"]');
-const button = document.querySelector('.btnApadrinheAgora');
+const button = document.querySelector(".btnApadrinheAgora");
 
 checkboxes.forEach((checkbox) => {
   checkbox.addEventListener("change", function () {
