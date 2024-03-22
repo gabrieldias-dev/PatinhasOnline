@@ -65,9 +65,12 @@ cards.forEach(function (boxCard) {
         corAnimal.innerHTML = "Cor: Preto";
         porteAnimal.innerHTML = "Porte: Médio";
         sobre.innerHTML = "a Adina";
-        paragrafoOne.innerHTML = "";
-        paragrafoTwo.innerHTML = "";
-        paragrafoThree.innerHTML = "";
+        paragrafoOne.innerHTML =
+          "Adina, uma adorável fêmea de porte médio, traz alegria e vitalidade onde quer que vá. Com seus olhos brilhantes e pelagem macia, ela é um verdadeiro raio de sol em qualquer ambiente.";
+        paragrafoTwo.innerHTML =
+          "Seu coração carinhoso transborda de amor, e ela sempre busca oportunidades para demonstrar afeto. Adina é uma companheira leal e uma amiga fiel, pronta para alegrar seus dias com brincadeiras divertidas e momentos de ternura.";
+        paragrafoThree.innerHTML =
+          " Sua presença é um lembrete constante de que a felicidade pode ser encontrada nas coisas mais simples da vida.";
 
         break;
 
@@ -81,8 +84,10 @@ cards.forEach(function (boxCard) {
         corAnimal.innerHTML = "Cor: Caramelo";
         porteAnimal.innerHTML = "Porte: Médio";
         sobre.innerHTML = "o Auro";
-        paragrafoOne.innerHTML = "";
-        paragrafoTwo.innerHTML = "";
+        paragrafoOne.innerHTML =
+          "Auro, um magnífico macho de porte médio com uma pelagem caramelo deslumbrante, é uma fonte inesgotável de alegria e amor. Com um temperamento gentil e uma personalidade afetuosa, ele ilumina qualquer ambiente com seu charme cativante.";
+        paragrafoTwo.innerHTML =
+          "Auro adora brincar e explorar o mundo ao seu redor, sempre com uma disposição brincalhona e um sorriso no rosto. Sua lealdade é incomparável, e ele está sempre pronto para oferecer conforto e companheirismo aos seus entes queridos. Com Auro por perto, cada dia é preenchido com momentos de felicidade e carinho.";
         paragrafoThree.innerHTML = "";
 
         break;
@@ -158,6 +163,98 @@ cards.forEach(function (boxCard) {
         paragrafoTwo.innerHTML =
           "Ele adora um carinho, é muito meigo e você não vai se arrepender de dar uma segunda chance para ele!";
         paragrafoThree.innerHTML = "";
+
+        break;
+
+      case "balu":
+        fotoAnimal.src = "../assets/AnimaisParaAdotar/balu.jpg";
+        iconeSexo.src = "../assets/icon/macho.svg";
+        nomeAnimal.innerHTML = "Balu";
+        nascimentoAnimal.innerHTML = "Sem estimativa";
+        idadeAnimal.innerHTML = "Adulto";
+        sexoAnimal.innerHTML = "Sexo: Masculino";
+        corAnimal.innerHTML = "Cor: Branco e preto";
+        porteAnimal.innerHTML = "Porte: Grande";
+        sobre.innerHTML = "o Balu";
+        paragrafoOne.innerHTML =
+          "balu, um esplêndido macho de porte grande com uma pelagem branco e preto que hipnotiza qualquer um que o veja, é uma fonte inesgotável de felicidade e vitalidade. ";
+        paragrafoTwo.innerHTML =
+          "Com uma personalidade cativante e uma disposição brincalhona, ele é o centro das atenções onde quer que vá. Abalu adora explorar o mundo ao seu redor, sempre cheio de curiosidade e entusiasmo. ";
+        paragrafoThree.innerHTML = "";
+
+        break;
+
+      case "pandorinha":
+        fotoAnimal.src = "../assets/AnimaisParaAdotar/pandorinha.jpg";
+        iconeSexo.src = "../assets/icon/femea.svg";
+        nomeAnimal.innerHTML = "Pandora";
+        nascimentoAnimal.innerHTML = "Sem estimativa";
+        idadeAnimal.innerHTML = "Adulto";
+        sexoAnimal.innerHTML = "Sexo: Feminino";
+        corAnimal.innerHTML = "Cor: Tonalidades de bege/marrom";
+        porteAnimal.innerHTML = "Porte: Médio";
+        sobre.innerHTML = "a pandorinha";
+        paragrafoOne.innerHTML =
+          "Pandora, uma encantadora fêmea de porte médio com uma pelagem de diferentes tonalidades de bege, é uma verdadeira musa da alegria e da ternura. Com seus olhos brilhantes e sua pelagem macia, ela é uma presença reconfortante e acolhedora em qualquer ambiente. ";
+        paragrafoTwo.innerHTML =
+          "Pandora adora demonstrar carinho e afeto, sempre pronta para oferecer abraços calorosos e lambidas carinhosas. Sua personalidade gentil e compassiva a torna uma companheira excepcional, capaz de iluminar até os dias mais sombrios com sua presença amorosa.  ";
+        paragrafoThree.innerHTML =
+          "Com Pandora ao seu lado, cada momento é preenchido com calor, conforto e felicidade.";
+
+        break;
+
+      case "nico":
+        fotoAnimal.src = "../assets/AnimaisParaAdotar/nico.jpg";
+        iconeSexo.src = "../assets/icon/macho.svg";
+        nomeAnimal.innerHTML = "Nico";
+        nascimentoAnimal.innerHTML = "Sem estimativa";
+        idadeAnimal.innerHTML = "Adulto";
+        sexoAnimal.innerHTML = "Sexo: Masculino";
+        corAnimal.innerHTML = "Cor: Tonalidades de bege";
+        porteAnimal.innerHTML = "Porte: Médio";
+        sobre.innerHTML = "o Nico";
+        paragrafoOne.innerHTML =
+          "Nico, um charmoso macho de porte médio com uma pelagem de tom bege que irradia elegância e calma. Com um olhar sereno e uma personalidade tranquila, ele traz uma sensação de paz e contentamento a todos ao seu redor.  ";
+        paragrafoTwo.innerHTML =
+          " Nico é um companheiro leal, sempre presente para oferecer apoio silencioso e conforto incondicional. Sua natureza carinhosa se manifesta em gestos sutis de ternura e em momentos de conexão profunda.";
+        paragrafoThree.innerHTML = "";
+
+        break;
+
+      case "coto":
+        fotoAnimal.src = "../assets/AnimaisParaAdotar/coto.jpg";
+        iconeSexo.src = "../assets/icon/macho.svg";
+        nomeAnimal.innerHTML = "Cotó";
+        nascimentoAnimal.innerHTML = "Sem estimativa";
+        idadeAnimal.innerHTML = "Idoso";
+        sexoAnimal.innerHTML = "Sexo: Masculino";
+        corAnimal.innerHTML = "Cor: Tonalidades de bege";
+        porteAnimal.innerHTML = "Porte: Médio";
+        sobre.innerHTML = "o Cotó";
+        paragrafoOne.innerHTML =
+          "Cotó, um distinto macho de porte médio com uma pelagem de tom bege, é uma fonte de sabedoria e ternura em seus anos dourados. Com sua postura serena e olhos gentis, ele transmite uma sensação de calma e tranquilidade a todos ao seu redor.";
+        paragrafoTwo.innerHTML =
+          "Cotó é um amigo leal e compassivo, cuja presença suave e reconfortante traz conforto aos corações daqueles que o conhecem. Seu amor incondicional e sua natureza afetuosa são um testemunho duradouro do poder do vínculo entre humanos e animais.";
+        paragrafoThree.innerHTML = "";
+
+        break;
+
+      case "adela":
+        fotoAnimal.src = "../assets/AnimaisParaAdotar/adela.jpg";
+        iconeSexo.src = "../assets/icon/femea.svg";
+        nomeAnimal.innerHTML = "Adela";
+        nascimentoAnimal.innerHTML = "Sem estimativa";
+        idadeAnimal.innerHTML = "Adulto";
+        sexoAnimal.innerHTML = "Sexo: Feminino";
+        corAnimal.innerHTML = "Cor: Preto e manchas bege";
+        porteAnimal.innerHTML = "Porte: Grande";
+        sobre.innerHTML = "a Adela";
+        paragrafoOne.innerHTML =
+          "Adela, uma majestosa fêmea de porte grande com uma pelagem preta e manchas bege que adicionam um toque de elegância ao seu visual imponente. ";
+        paragrafoTwo.innerHTML =
+          "Com sua presença marcante e olhos cheios de doçura, ela é uma fonte de força e afeto para todos ao seu redor. Adela é uma guardiã gentil e protetora, pronta para defender aqueles que ama com determinação e coragem. Sua lealdade inabalável e seu espírito amoroso são um reflexo da profundidade do vínculo entre humanos e animais. ";
+        paragrafoThree.innerHTML =
+          "Com Adela ao seu lado, cada dia é preenchido com a segurança e aconchego que só uma verdadeira amiga pode oferecer.";
 
         break;
 
