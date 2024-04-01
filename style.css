@@ -364,6 +364,7 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+
 .section-frase img {
   position: absolute;
   max-width: 100%;
@@ -388,7 +389,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   max-width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   overflow: hidden;
   background-color: var(--var-green);
   padding: 10rem;
@@ -438,6 +439,8 @@ swiper-slide {
 .imagem-animal {
   position: absolute;
   width: 100%;
+  height: fit-content;
+ object-fit: cover; 
   top: 0;
   left: 0;
   transform: scale(1.2);
@@ -738,6 +741,29 @@ footer {
 
 /*  ------------ Telas médias ------------------- */
 
+@media (min-width: 1225px) and (max-width: 1320px) {
+    .section-frase img {
+    top: -20rem;
+}
+
+.container-img {
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  .container-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container-infos {
+    padding: 5rem;
+   
+  }
+
+}
+
 @media (min-width: 1025px) and (max-width: 1225px) {
   .navigation :nth-child(8) {
     width: 22rem;
@@ -770,6 +796,185 @@ footer {
   .creditos-copywriting p:nth-child(1) {
     font-size: 1.5rem;
   }
+
+  .section-frase img {
+  top: -20rem;
+}
+
+/* -------------- Section cards Animais -------------- */
+
+.section-animais {
+  padding: 10rem 5rem;
+}
+
+
+.container-carrossel-animais {
+  width: 98rem;
+  height: 45rem;
+  position: relative;
+}
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.container-carrossel-animais swiper-slide {
+  width: 32rem;
+  height: 39rem;
+  background-color: var(--var-white);
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.box-imagem {
+  position: relative;
+  width: 100%;
+  height: 30rem;
+  border-radius: 2rem;
+  overflow: hidden;
+
+  display: flex;
+  align-items: end;
+  padding: 1rem;
+  background-color: #818181;
+  z-index: -2;
+}
+
+.imagem-animal {
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+ object-fit: cover; 
+  top: 0;
+  left: 0;
+  transform: scale(1.2);
+  z-index: -1;
+}
+
+.icon-animal {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.icon-img-info {
+  cursor: pointer;
+}
+
+.infoIconAnimais span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--var-white);
+  width: 7.9rem;
+  height: 2.9rem;
+  border-radius: 10rem;
+  font-family: var(--var-font);
+  font-weight: 500;
+  font-size: 1.3rem;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.infoIconAnimais {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.infoIconAnimais:hover span {
+  opacity: 100%;
+}
+
+.info-animal {
+  padding: 1rem;
+}
+
+.info-animal h4 {
+  font-size: 2.4rem;
+}
+
+.info-animal > div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  font-family: var(--var-font);
+}
+
+.todos-animais {
+  margin-top: 2rem;
+}
+.todos-animais a {
+  font-family: var(--var-font);
+  color: var(--var-white);
+  text-decoration: none;
+  font-size: 1.6rem;
+
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s;
+}
+
+.todos-animais a:hover {
+  transform: scale(1.05);
+}
+
+/* ------------ Section Historias Felizes ------------ */
+
+.section-historias {
+  max-width: 100%;
+  padding: 10rem 5rem;
+  height: auto;
+}
+
+.container-carrossel-historias {
+  width: 100rem;
+}
+
+.box-historias .img-box {
+  height: 31rem;
+ 
+}
+
+.historia-feliz {
+  height: 31rem;
+}
+
+.section-infos {
+    padding: 1.5rem 2rem;
+    overflow: hidden;
+  }
+
+  /* .container-infos, */
+  .container-img {
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  .container-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container-infos {
+    display: flex;
+    flex-direction: column;
+  
+    padding: 5rem;
+    font-size: 1.8rem;
+  }
+
+  .container-infos h2 {
+    font-size: 4rem;
+  }
+
+
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -832,12 +1037,13 @@ footer {
     height: 4.4rem;
   }
 
+  /* ------------ section info ---------------- */
+
   .section-infos {
     padding: 1.5rem 2rem;
     overflow: hidden;
   }
 
-  .container-infos,
   .container-img {
     width: 100%;
     overflow: hidden;
@@ -927,7 +1133,8 @@ footer {
   /* -------------- Section animais ----------------- */
 
   .section-animais {
-    padding: 2rem;
+    padding: 10rem 2rem;
+    height: auto;
   }
 
   .section-animais h2 {
@@ -1029,6 +1236,7 @@ footer {
 
   .historia-feliz h4 {
     font-size: 2rem;
+    margin-bottom: 1rem;
   }
 
   .historia-feliz p {
@@ -1264,7 +1472,9 @@ footer {
   /* --------------- Cards animais ---------------- */
 
   .section-animais {
-    padding: 2rem;
+    height: auto;
+    padding: 5rem 3rem;
+
   }
 
   .section-animais h2 {
