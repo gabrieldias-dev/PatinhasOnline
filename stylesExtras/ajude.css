@@ -163,12 +163,12 @@ nav .navigation :nth-child(7):hover {
 }
 
 .container-inicio {
-  width: 124rem;
+  width: 100%;
   height: 24.8rem;
-  padding: 10rem 0 6rem 20rem;
+  padding-top: 10rem;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: center;
   gap: 3rem;
 }
 
@@ -233,6 +233,7 @@ nav .navigation :nth-child(7):hover {
 }
 
 .btn-ajudar {
+  min-width: 15.6rem;
   padding: 1.4rem 2.6rem;
   margin-top: 4rem;
   border-radius: 10rem;
