@@ -329,6 +329,8 @@ nav .navigation :nth-child(7):hover {
   transition: background-color 0.1s;
 }
 
+
+
 .btn-ajudar:hover {
   color: var(--var-green);
   background-color: var(--var-white);

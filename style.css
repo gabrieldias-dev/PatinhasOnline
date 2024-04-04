@@ -318,7 +318,7 @@ a .btn-ajudar  {
 }
 
 .btn-ajudar:hover {
-
+  color: var(--var-green);
   background-color: var(--var-white);
   outline: 2px solid var(--var-green);
   cursor: pointer;
