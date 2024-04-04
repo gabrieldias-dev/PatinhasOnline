@@ -115,6 +115,7 @@ nav .navigation :nth-child(7) {
 
 .navigation :nth-child(6) a,
 .navigation :nth-child(7) a {
+  display: block;
   color: var(--var-black);
 }
 
@@ -152,15 +153,6 @@ nav .navigation :nth-child(7):hover {
   justify-content: end;
   align-items: end;
 }
-
-/* .background-inicio {
-  position: absolute;
-  top: -9rem;
-  width: 100%;
-  height: 160%;
-  left: 0;
-  z-index: -1;
-} */
 
 .background-inicio {
   position: absolute;
