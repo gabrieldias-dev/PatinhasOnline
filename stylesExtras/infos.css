@@ -12,6 +12,7 @@
   --var-green: #a4c213;
   --var-white: #ffffff;
   --var-black: #161616;
+  --var-colorDisabled: #ffffff9a;
 }
 
 html {
@@ -49,9 +50,9 @@ header {
 
 nav {
   display: flex;
+  width: min( 144rem, 100%); 
   justify-content: space-between;
   align-items: top;
-  width: 100%;
   height: 11.8rem;
   margin: 4rem 10rem 0 10rem;
 }
@@ -80,10 +81,18 @@ ul {
 
 nav .navigation li:nth-child(1) a:hover,
 nav .navigation li:nth-child(3) a:hover,
-nav .navigation li:nth-child(4) a:hover,
-nav .navigation li:nth-child(5) a:hover {
+nav .navigation li:nth-child(4) a:hover {
   color: var(--var-green);
 }
+
+nav .navigation li:nth-child(5) a {
+  color: var(--var-colorDisabled);
+}
+
+nav .navigation li:nth-child(5) a:hover {
+  cursor: not-allowed;
+}
+
 
 .navigation li {
   position: relative;
@@ -242,10 +251,14 @@ nav .navigation :nth-child(7):hover {
 .section-Galeria-Separadora {
   width: 100%;
   padding: 0 3rem 3rem 3rem;
+  display: flex;
+  justify-content: center;
 }
 
 .container-galeria {
+  width: min( 144rem, 100%); 
   display: flex;
+  justify-content: center;
   gap: 3rem;
 }
 
@@ -470,11 +483,14 @@ nav .navigation :nth-child(7):hover {
 footer {
   max-width: 100%;
   background-color: var(--var-green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container-footer {
-  width: 100%;
-  padding: 7rem 20rem 10rem 20rem;
+   width: min( 144rem, 100%); 
+  padding: 7rem 15rem 10rem 15rem;
   display: flex;
   justify-content: space-between;
 }
@@ -526,6 +542,8 @@ footer {
 }
 
 .creditos-copywriting {
+  width: 100%;
+  height: 8.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -535,7 +553,7 @@ footer {
   font-size: 1.2rem;
   color: white;
   background-color: var(--var-black);
-  height: 8.5rem;
+  
 }
 
 .creditos-copywriting p:nth-child(1) {

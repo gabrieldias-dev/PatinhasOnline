@@ -18,6 +18,7 @@
   --var-green: #a4c213;
   --var-white: #ffffff;
   --var-black: #161616;
+  --var-colorDisabled: #ffffff9a;
 }
 
 html {
@@ -51,7 +52,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: top;
-   width: min( 144rem, 100%); 
+  width: min( 144rem, 100%); 
   height: 11.8rem;
   margin: 4rem 10rem 0 10rem;
 }
@@ -81,9 +82,18 @@ ul {
 .navigation li:nth-child(2) a:hover,
 .navigation li:nth-child(3) a:hover,
 .navigation li:nth-child(4) a:hover,
-.navigation li:nth-child(5) a:hover,
-.navigation li:nth-child(6) a:hover {
+.navigation li:nth-child(5) a:hover
+ {
   color: var(--var-green);
+}
+
+.navigation li:nth-child(6) a {
+  color: var(--var-colorDisabled);
+  
+}
+
+.navigation li:nth-child(6) a:hover {
+  cursor: not-allowed;
 }
 
 .navigation li {
