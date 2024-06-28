@@ -207,10 +207,13 @@ nav .navigation :nth-child(7):hover {
 
 .container-ajudar {
   display: flex;
+  width: 144rem;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 3rem;
+  gap: 5rem; 
   overflow: hidden;
+  
+  
 }
 
 .card-ajudar {
