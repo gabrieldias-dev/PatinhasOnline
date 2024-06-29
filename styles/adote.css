@@ -167,7 +167,7 @@ nav .navigation :nth-child(7):hover {
     rgba(0, 0, 0, 0.9) 100%
   );
 
-  padding: 0 10rem 4rem 10rem;
+  padding: 2rem 10rem;
   display: flex;
   justify-content: end;
   align-items: end;
@@ -185,12 +185,11 @@ nav .navigation :nth-child(7):hover {
 
 .container-inicio {
   width: 100%;
-  height: 24.8rem;
+  height: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
 }
 
 .container-inicio p {
