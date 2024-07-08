@@ -14,6 +14,10 @@
 //   document.body.style.overflow = "overlay";
 // }
 
+function desativado() {
+  window.alert ("Página dos Animais está em manutenção para ajustes e atualizações. Breve poderá conhecer todos nossos peludinhos (; ")
+}
+
 function ajustarSlidesPorViewport() {
   let carrosselAnimais = document.querySelector("#swiperAnimais");
   let historiasFelizes = document.querySelector("#swiperHistorias");

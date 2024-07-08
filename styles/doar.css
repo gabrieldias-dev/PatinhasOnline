@@ -77,18 +77,18 @@ ul {
 
 .navigation li:nth-child(1) a:hover,
 .navigation li:nth-child(2) a:hover,
-.navigation li:nth-child(3) a:hover,
 .navigation li:nth-child(4) a:hover {
   color: var(--var-green);
 }
 
-nav .navigation li:nth-child(5) a {
+nav .navigation li:nth-child(5) a, nav .navigation li:nth-child(3) a {
   color: var(--var-colorDisabled);
 }
 
-nav .navigation li:nth-child(5) a:hover {
+nav .navigation li:nth-child(5) a:hover, nav .navigation li:nth-child(3) a:hover {
   cursor: not-allowed;
 }
+
 
 
 .navigation li {
