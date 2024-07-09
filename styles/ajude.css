@@ -491,6 +491,8 @@ footer {
 
   .container-ajudar {
     gap: 1.5rem;
+    width: 100%;
+     
   }
 
   .card-ajudar {
@@ -698,6 +700,8 @@ footer {
   .container-ajudar {
     flex-direction: column;
     gap: 4rem;
+    width: 100%;
+
   }
 
   /* ------------ Section Feed instagram  ------------ */

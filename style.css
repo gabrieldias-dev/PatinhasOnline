@@ -86,21 +86,12 @@ ul {
   color: var(--var-green);
 }
 
- .navigation li:nth-child(3) a {
+.navigation li:nth-child(6) a, .navigation li:nth-child(3) a {
   color: var(--var-colorDisabled);
   
 }
 
-.navigation li:nth-child(3) a:hover {
-  cursor: not-allowed;
-} 
-
-.navigation li:nth-child(6) a {
-  color: var(--var-colorDisabled);
-  
-}
-
-.navigation li:nth-child(6) a:hover {
+.navigation li:nth-child(6) a:hover, .navigation li:nth-child(3) a:hover {
   cursor: not-allowed;
 }
 
@@ -1407,14 +1398,16 @@ swiper-container {
     width: 100%;
     height: auto;
     padding: 5rem 0;
+    align-items: center;
   }
 
   h1 {
     color: #fff;
-    text-align: right;
+    text-align: center;
     font-family: var(--var-font-title);
-    font-size: 3.6rem;
+    font-size: 3rem;
     font-weight: 400;
+    
   }
 
   .btn-ajude-causa {
