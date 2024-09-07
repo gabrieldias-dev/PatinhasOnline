@@ -77,17 +77,18 @@ ul {
 
 nav .navigation li:nth-child(1) a:hover,
 nav .navigation li:nth-child(2) a:hover,
+nav .navigation li:nth-child(3) a:hover,
 nav .navigation li:nth-child(4) a:hover {
   color: var(--var-green);
 }
 
-nav .navigation li:nth-child(5) a, nav .navigation li:nth-child(3) a {
+/* nav .navigation li:nth-child(5) a, nav .navigation li:nth-child(3) a {
   color: var(--var-colorDisabled);
 }
 
 nav .navigation li:nth-child(5) a:hover, nav .navigation li:nth-child(3) a:hover {
   cursor: not-allowed;
-}
+} */
 
 
 .navigation li {
@@ -106,8 +107,8 @@ nav .navigation li:nth-child(5) a:hover, nav .navigation li:nth-child(3) a:hover
   background-color: var(--var-green);
 }
 
-.navigation :nth-child(6),
-.navigation :nth-child(7) {
+.navigation :nth-child(5),
+.navigation :nth-child(6) {
   display: flex;
   min-width: 15rem;
   padding: 1.4rem 2.6rem;
@@ -118,27 +119,27 @@ nav .navigation li:nth-child(5) a:hover, nav .navigation li:nth-child(3) a:hover
   border-radius: 10rem;
 }
 
-.navigation :nth-child(6) a,
-.navigation :nth-child(7) a {
+.navigation :nth-child(5) a,
+.navigation :nth-child(6) a {
   color: var(--var-black);
 }
 
-nav .navigation :nth-child(6):hover,
-nav .navigation :nth-child(7):hover {
+nav .navigation :nth-child(5):hover,
+nav .navigation :nth-child(6):hover {
   background-color: var(--var-white);
   cursor: pointer;
   outline: 2px solid var(--var-green);
 }
 
-.navigation :nth-child(6) {
+.navigation :nth-child(5) {
   margin-right: 1rem;
 }
 
-.navigation :nth-child(7) {
+.navigation :nth-child(6) {
   margin-right: 0;
 }
 
-.navigation :nth-child(6) {
+.navigation :nth-child(5) {
   background-color: var(--var-white);
   outline: 2px solid var(--var-green);
 }
@@ -707,11 +708,11 @@ footer {
     filter: invert(1);
   }
 
-  .menuTelasMenores .navigation li:nth-child(n + 6) a {
+  .menuTelasMenores .navigation li:nth-child(n + 5) a {
     color: black;
   }
 
-  .menuTelasMenores .navigation li:nth-child(n + 6) {
+  .menuTelasMenores .navigation li:nth-child(n + 5) {
     background-color: var(--var-white);
     min-width: 15rem;
     padding: 1.4rem 2.6rem;
