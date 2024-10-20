@@ -1058,7 +1058,7 @@ footer {
   }
 
   .section-contatos p {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .container-contatos {
@@ -1073,6 +1073,10 @@ footer {
     display: flex;
     width: 100%;
     height: auto;
+  }
+
+  .box-contato p {
+    
   }
 
   .box-contato p:hover {

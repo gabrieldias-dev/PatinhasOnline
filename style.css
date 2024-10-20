@@ -1568,7 +1568,7 @@ swiper-container {
 
   .section-historias {
     overflow: hidden;
-    padding: 3rem 1.5rem;
+    padding: 3rem .5rem;
   }
 
   .section-historias h2 {
@@ -1593,20 +1593,25 @@ swiper-container {
   .box-historias {
     display: flex;
     flex-direction: column;
+    align-content: top;
+    justify-content: top;
+    
+    
     height: 100%;
-    padding: 0 2.8rem;
+    padding: 0 3.2rem;
     gap: 1.5rem;
     margin: 0 0;
   }
 
   .box-historias .img-box {
     width: 100%;
-    height: 20rem;
+    height: 25rem;
     object-fit: cover;
+   
   }
 
   .box-historias .img-box img {
-    object-position: 0 -7rem;
+    /* object-position: 0 7rem; */
   }
 
   .historia-feliz {
