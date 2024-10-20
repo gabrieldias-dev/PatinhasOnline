@@ -1610,9 +1610,9 @@ swiper-container {
    
   }
 
-  .box-historias .img-box img {
-    /* object-position: 0 7rem; */
-  }
+  /* .box-historias .img-box img {
+    / object-position: 0 7rem; 
+  } */
 
   .historia-feliz {
     width: 100%;
