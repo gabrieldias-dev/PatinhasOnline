@@ -1371,6 +1371,11 @@ swiper-container {
     background-color: var(--var-white);
   }
 
+  .menuTelasMenores .redes-sociais {
+    border: 1px solid black;
+    position: relative;
+  }
+
   .fecharMenu {
     display: flex;
     justify-content: end;
@@ -1660,7 +1665,7 @@ swiper-container {
   /* ------------ Section Feed instagram  ------------ */
 
   .section-feedInstagram {
-    height: 100%;
+    max-height: 13.5rem;
     padding-bottom: 2rem;
   }
 
