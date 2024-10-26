@@ -31,9 +31,9 @@ h2 {
   font-weight: 400;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
-}
+} */
 
 header {
   position: absolute;
@@ -466,7 +466,7 @@ nav .navigation :nth-child(6):hover {
 
 .section-feedInstagram {
   width: 100%;
-  height: 36rem;
+  max-height: 58rem;
   background-color: var(--var-green);
   display: flex;
 }
