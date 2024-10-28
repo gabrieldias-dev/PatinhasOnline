@@ -1316,7 +1316,6 @@ swiper-container {
     justify-content: space-between;
     width: 100%;
     padding: 2rem;
-    z-index: 10;
   }
 
   .menuHamburguer :nth-child(1) {
@@ -1338,8 +1337,8 @@ swiper-container {
     align-items: center;
     transform: translateX(100%);
     background-color: var(--var-green);
-    z-index: 100;
     transition: transform 0.5s;
+    z-index: 99;
   }
 
   .menuTelasMenores .logoPatinhasOnline {
@@ -1426,6 +1425,8 @@ swiper-container {
     width: 23rem;
     height: 4.2rem;
     border: 1px solid var(--var-green);
+    z-index: 10;
+    
   }
 
   .btn-ajude-causa:hover {
