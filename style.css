@@ -641,7 +641,7 @@ swiper-slide {
 
 .section-feedInstagram {
   width: 100%;
-  max-height: 46rem;
+  max-height: 58rem;
   background-color: var(--var-green);
   display: flex;
   
@@ -1667,9 +1667,9 @@ swiper-container {
   /* ------------ Section Feed instagram  ------------ */
 
   .section-feedInstagram {
-    max-height: 13.5rem;
-    padding-bottom: 2rem;
-  }
+     max-height: 13.5rem;
+     padding-bottom: 2rem;
+  } 
 
   /* ----------- Footer ------------ */
 
